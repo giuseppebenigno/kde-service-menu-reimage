@@ -28,6 +28,7 @@ X-KDE-Submenu[it]=ReImage - Utilità
 X-KDE-Submenu[de]=ReImage - Utilitäten
 X-KDE-Submenu[fr]=ReImage - Outils
 X-KDE-Submenu[es]=ReImage - Herramientas
+X-KDE-Submenu[fa]=ReImage - ابزارها
 X-KDE-Submenu[ru]=ReImage - Инструменты
 
 ################################################################################
@@ -40,6 +41,7 @@ Name[it]=Crea GIF animata
 Name[de]=Animierte GIF erstellen
 Name[fr]=Créer un GIF animé
 Name[es]=Crear GIF animado
+Name[fa]=تولید GIF متحرک
 Name[ru]=Создать анимированный GIF
 
 [Desktop Action append-right]
@@ -50,6 +52,7 @@ Name[it]=Appendi immagine a destra
 Name[de]=Nach rechts anhängen
 Name[fr]=Ajouter à droite
 Name[es]=Añadir a la derecha
+Name[fa]=پیوست به راست
 Name[ru]=Прикрепить справа
 
 ################################################################################
@@ -62,6 +65,7 @@ Name[it]=Scala di grigi
 Name[de]=Graustufen
 Name[fr]=Niveaux de gris
 Name[es]=Escala de grises
+Name[fa]=سیاه و سفید
 Name[ru]=Оттенки серого
 
 [Desktop Action sepia]
@@ -72,6 +76,7 @@ Name[it]=Seppia
 Name[de]=Sepia
 Name[fr]=Sépia
 Name[es]=Sepia
+Name[fa]=سپیا
 Name[ru]=Сепия
 
 [Desktop Action transparent2color]
@@ -82,6 +87,7 @@ Name[it]=Cambia trasparenza a colore
 Name[de]=Transparenz in Farbe ändern
 Name[fr]=Changer la transparence en couleur
 Name[es]=Cambiar transparencia a color
+Name[fa]=تغییر شفافیت به رنگ
 Name[ru]=Заменить прозрачность цветом
 
 ################################################################################
@@ -94,6 +100,7 @@ Name[it]=Aggiungi bordo colorato
 Name[de]=Farbigen Rand hinzufügen
 Name[fr]=Ajouter une bordure colorée
 Name[es]=Añadir borde coloreado
+Name[fa]=افزودن حاشیه رنگی
 Name[ru]=Добавить цветную рамку
 
 [Desktop Action border-transparent]
@@ -104,6 +111,7 @@ Name[it]=Aggiungi bordo trasparente
 Name[de]=Transparenten Rand hinzufügen
 Name[fr]=Ajouter una bordure transparente
 Name[es]=Añadir borde transparente
+Name[fa]=افزودن حاشیه شفاف
 Name[ru]=Добавить прозрачную рамку
 
 [Desktop Action shadow]
@@ -114,4 +122,5 @@ Name[it]=Aggiungi ombra
 Name[de]=Schlagschatten hinzufügen
 Name[fr]=Ajouter une ombre portée
 Name[es]=Añadir sombra paralela
+Name[fa]=افزودن سایه
 Name[ru]=Добавить тень

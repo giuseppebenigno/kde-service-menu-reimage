@@ -385,6 +385,126 @@ load_language_es () {
 	msg_base64_finish_title="Convertir \"${name}\" a Base64"
 }
 
+load_language_fa () {
+	msg_common_software_not_found_title="نرم‌افزار پیدا نشد"
+	msg_common_mogrify_not_found_text="نرم‌افزار ImageMagick پیدا نشد! لطفاً آن را نصب کنید."
+	msg_common_convert_not_found_text="نرم‌افزار ImageMagick پیدا نشد! لطفاً آن را نصب کنید."
+	msg_common_montage_not_found_text="نرم‌افزار ImageMagick پیدا نشد! لطفاً آن را نصب کنید."
+	msg_common_jhead_not_found_text="نرم‌افزار jhead پیدا نشد! لطفاً آن را نصب کنید."
+	msg_common_webp_not_found_text="نرم‌افزار webp پیدا نشد! لطفاً آن را نصب کنید."
+	msg_common_action_not_found_text="عملیات درخواستی پیاده‌سازی نشده است."
+	msg_common_overwrite_text="در صورتی که تصاویر ذخیره شده هم‌نام با تصاویر در حال پردازش باشند،${new_line}آیا می‌خواهید آن‌ها را جایگزین کنید؟"
+	msg_common_abort="عملیات توسط کاربر لغو شد."
+	msg_common_file_not_found="فایل \"${name}\" پیدا نشد!"
+	msg_common_name_error="نام فایل \"${name}\" با فرمت تاریخ شناخته شده مطابقت ندارد.${new_line}${new_line}نام باید از نوع YYYY-MM-DD_HHMMSS.jpg باشد"
+	msg_common_start="در حال راه‌اندازی ... "
+	msg_common_progress_text="در حال پردازش فایل $processed از $quantity ($(basename "${input}"))"
+	msg_common_finish_ok="انجام شد."
+	msg_common_finish_error="خطایی رخ داده است."
+	msg_common_transparent_unsupported_text="فرمت JPEG از شفافیت پشتیبانی نمی‌کند.${new_line}تبدیل به فایل PNG."
+
+	msg_agif_title="تبدیل فایل‌ها به GIF متحرک"
+	msg_agif_delay_input_text="مدت زمان تک فریم را بر حسب صدم ثانیه وارد کنید:${new_line}(100 = 1 ثانیه)"
+	msg_agif_loop_input_text="آیا می‌خواهید پخش تکرار شود؟"
+	msg_agif_cicles_number_input_text="تعداد تکرار انیمیشن را وارد کنید:"
+	msg_agif_finish_title="تبدیل فایل‌ها به GIF متحرک"
+
+	msg_border_title="افزودن حاشیه"
+	msg_border_size_input_text="اندازه حاشیه را به درصد یا پیکسل وارد کنید.${new_line}${new_line}مقادیر معتبر می‌تواند 10% یا 50 باشد"
+	msg_border_finish_title="افزودن حاشیه به \"${name}\""
+
+	msg_colorspace_title="تغییر فضای رنگی به \"${value}\""
+	msg_colorspace_finish_title="تغییر فضای رنگی \"${name}\""
+
+	msg_compress_title="فشرده‌سازی تصویر با کیفیت \"${value}\""
+	msg_compress_quality_input_text="کیفیت را وارد کنید:"
+	msg_compress_finish_title="فشرده‌سازی \"${name}\""
+
+	msg_convert_title="تبدیل فایل به فرمت \"${value}\""
+	msg_convert_format_input_text="فرمت مورد نظر خود را وارد کنید.${new_line}لیست کامل را می‌توانید با دستور mogrify -list format در ترمینال${new_line}یا با مراجعه به دفترچه راهنمای ImageMagick مشاهده کنید."
+	msg_convert_finish_title="تبدیل \"${name}\""
+
+	msg_favicons_title="تولید فاوآیکون"
+	msg_favicons_finish_title="تولید فاوآیکون از \"${name}\""
+
+	msg_montage_title="پیوست کردن تصویر"
+	msg_montage_finish_title="پیوست کردن تصویر به \"${name}\""
+
+	msg_optimize_title="بهینه‌سازی برای وب"
+	msg_optimize_finish_title="بهینه‌سازی \"${name}\""
+
+	msg_overturn_title="واژگونی فایل به \"${value}\""
+	msg_overturn_finish_title="واژگونی \"${name}\""
+
+	msg_resize_title="تغییر اندازه تصویر \"${value}\""
+	msg_resize_scale_input_text="ضریب مقیاس را به درصد یا حداکثر اندازه مورد نظر برای هر جهت وارد کنید.${new_line}می‌توانید درصد یا اندازه پیکسل را انتخاب کنید.${new_line}${new_line}مقادیر معتبر می‌تواند 30% یا 1024x768 باشد"
+	msg_resize_finish_title="تغییر اندازه \"${name}\""
+
+	msg_rotate_title="چرخش فایل با زاویه \"${value}\""
+	msg_rotate_angle_input_text="زاویه چرخش مورد نظر را وارد کنید:"
+	msg_rotate_finish_title="چرخش \"${name}\""
+
+	msg_sepia_title="فیلتر سپیا"
+	msg_sepia_finish_title="فیلتر سپیا روی \"${name}\""
+
+	msg_shadow_title="افزودن سایه"
+	msg_shadow_finish_title="افزودن سایه به \"${name}\""
+
+	msg_timestamp_title="افزودن برچسب زمان"
+	msg_timestamp_finish_title="افزودن برچسب زمان به \"${name}\""
+
+	msg_transparent2color_title="تغییر شفافیت به رنگ"
+	msg_transparent2color_finish_title="تغییر شفافیت به رنگ در \"${name}\""
+
+	msg_rfe_title="تغییر نام فایل از متادیتای Exif"
+	msg_rfe_no_metadata="ممکن است تصویر فاقد متادیتا باشد."
+	msg_rfe_finish_title="تغییر نام فایل \"${name}\""
+
+	msg_rff_title="تغییر نام فایل از تاریخ فایل"
+	msg_rff_finish_title="تغییر نام فایل \"${name}\""
+
+	msg_sffe_title="تنظیم تاریخ فایل از متادیتای Exif"
+	msg_sffe_no_metadata="ممکن است تصویر فاقد متادیتا باشد."
+	msg_sffe_finish_title="تنظیم تاریخ برای \"${name}\""
+
+	msg_sffn_title="تنظیم تاریخ فایل از نام فایل"
+	msg_sffn_finish_title="تنظیم تاریخ برای \"${name}\""
+
+	msg_seff_title="تنظیم تاریخ Exif از تاریخ فایل"
+	msg_seff_finish_title="تنظیم تاریخ برای \"${name}\""
+
+	msg_sefn_title="تنظیم تاریخ Exif از نام فایل"
+	msg_sefn_finish_title="تنظیم تاریخ برای \"${name}\""
+
+	msg_ac_title="افزودن یادداشت"
+	msg_ac_comment_input_text="یادداشت را برای افزودن بنویسید:"
+	msg_ac_finish_title="افزودن یادداشت در \"${name}\""
+
+	msg_ve_title="مشاهده متادیتا"
+	msg_ve_finish_title="مشاهده متادیتای \"${name}\""
+
+	msg_ee_title="استخراج متادیتا"
+	msg_ee_finish_title="استخراج متادیتا از \"${name}\""
+
+	msg_dc_title="حذف یادداشت"
+	msg_dc_finish_title="حذف یادداشت از \"${name}\""
+
+	msg_de_title="پاکسازی بخش Exif"
+	msg_de_finish_title="پاکسازی بخش Exif از \"${name}\""
+
+	msg_di_title="حذف بخش IPTC"
+	msg_di_finish_title="حذف بخش IPTC از \"${name}\""
+
+	msg_dx_title="حذف بخش XMP"
+	msg_dx_finish_title="حذف بخش XMP از \"${name}\""
+
+	msg_purejpg_title="حذف تمام داده‌های غیرضروری"
+	msg_purejpg_finish_title="حذف تمام داده‌های غیرضروری از \"${name}\""
+
+	msg_base64_title="تبدیل به Base64"
+	msg_base64_finish_title="تبدیل \"${name}\" به Base64"
+}
+
 load_language_fr () {
 	msg_common_software_not_found_title="Logiciel non trouvé"
 	msg_common_mogrify_not_found_text="Le logiciel ImageMagick n'a pas été trouvé ! Veuillez l'installer."
@@ -762,6 +882,9 @@ load_language () {
 			;;
 		es*)
 			load_language_es
+			;;
+		fa*)
+			load_language_fa
 			;;
 		fr*)
 			load_language_fr
