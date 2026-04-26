@@ -34,6 +34,7 @@ X-KDE-Submenu[es]=ReImage - Convertir y girar
 X-KDE-Submenu[pt]=ReImage - Converter e rodar
 X-KDE-Submenu[fa]=ReImage - تبدیل و چرخش
 X-KDE-Submenu[ru]=ReImage - Конвертация и поворот
+X-KDE-Submenu[tr]=ReImage - Dönüştür ve döndür
 X-KDE-Submenu[zh_CN]=ReImage - 转换与旋转
 
 ################################################################################
@@ -52,6 +53,7 @@ Name[es]=Convertir a GIF
 Name[pt]=Converter para GIF
 Name[fa]=تبدیل به GIF
 Name[ru]=Конвертировать в GIF
+Name[tr]=GIF'e dönüştür
 Name[zh_CN]=转换为 GIF
 
 [Desktop Action jpeg]
@@ -68,6 +70,7 @@ Name[es]=Convertir a JPEG
 Name[pt]=Converter para JPEG
 Name[fa]=تبدیل به JPEG
 Name[ru]=Конвертировать в JPEG
+Name[tr]=JPEG'e dönüştür
 Name[zh_CN]=转换为 JPEG
 
 [Desktop Action png]
@@ -84,6 +87,7 @@ Name[es]=Convertir a PNG
 Name[pt]=Converter para PNG
 Name[fa]=تبدیل به PNG
 Name[ru]=Конвертировать в PNG
+Name[tr]=PNG'e dönüştür
 Name[zh_CN]=转换为 PNG
 
 [Desktop Action tiff]
@@ -100,6 +104,7 @@ Name[es]=Convertir a TIFF
 Name[pt]=Converter para TIFF
 Name[fa]=تبدیل به TIFF
 Name[ru]=Конвертировать в TIFF
+Name[tr]=TIFF'e dönüştür
 Name[zh_CN]=转换为 TIFF
 
 [Desktop Action webp]
@@ -116,6 +121,7 @@ Name[es]=Convertir a WEBP
 Name[pt]=Converter para WEBP
 Name[fa]=تبدیل به WEBP
 Name[ru]=Конвертировать в WEBP
+Name[tr]=WEBP'e dönüştür
 Name[zh_CN]=转换为 WEBP
 
 ################################################################################
@@ -134,6 +140,7 @@ Name[es]=Convertir a PDF
 Name[pt]=Converter para PDF
 Name[fa]=تبدیل به PDF
 Name[ru]=Конвертировать в PDF
+Name[tr]=PDF'e dönüştür
 Name[zh_CN]=转换为 PDF
 
 [Desktop Action pdfa]
@@ -150,6 +157,7 @@ Name[es]=Convertir a PDF/A-1
 Name[pt]=Converter para PDF/A-1
 Name[fa]=تبدیل به PDF/A-1
 Name[ru]=Конвертировать в PDF/A-1
+Name[tr]=PDF/A-1'e dönüştür
 Name[zh_CN]=转换为 PDF/A-1
 
 ################################################################################
@@ -168,6 +176,7 @@ Name[es]=Generar GIF animado
 Name[pt]=Gerar GIF animado
 Name[fa]=تولید GIF متحرک
 Name[ru]=Создать анимированный GIF
+Name[tr]=Hareketli GIF oluştur
 Name[zh_CN]=生成动画 GIF
 
 [Desktop Action favicons]
@@ -184,6 +193,7 @@ Name[es]=Generar favicons
 Name[pt]=Gerar favicons
 Name[fa]=تولید فاوآیکون
 Name[ru]=Создать фавиконки
+Name[tr]=Favicon oluştur
 Name[zh_CN]=生成网站图标
 
 [Desktop Action base64]
@@ -200,6 +210,7 @@ Name[es]=Convertir a Base64
 Name[pt]=Converter para Base64
 Name[fa]=تبدیل به Base64
 Name[ru]=Конвертировать в Base64
+Name[tr]=Base64'e dönüştür
 Name[zh_CN]=转换为 Base64
 
 [Desktop Action convert-custom]
@@ -216,6 +227,7 @@ Name[es]=Convertir a formato ...
 Name[pt]=Converter para o formato ...
 Name[fa]=تبدیل به فرمت ...
 Name[ru]=Конвертировать в формат ...
+Name[tr]=Formata dönüştür ...
 Name[zh_CN]=转换为格式 ...
 
 [Desktop Action formats]
@@ -232,6 +244,7 @@ Name[es]=Lista de formatos
 Name[pt]=Lista de formatos
 Name[fa]=لیست فرمت‌ها
 Name[ru]=Список форматов
+Name[tr]=Format listesi
 Name[zh_CN]=格式列表
 
 ################################################################################
@@ -250,6 +263,7 @@ Name[es]=Girar 90°
 Name[pt]=Rodar 90°
 Name[fa]=چرخش ۹۰ درجه
 Name[ru]=Повернуть на 90°
+Name[tr]=90° döndür
 Name[zh_CN]=旋转 90°
 
 [Desktop Action rotate-180]
@@ -266,6 +280,7 @@ Name[es]=Girar 180°
 Name[pt]=Rodar 180°
 Name[fa]=چرخش ۱۸۰ درجه
 Name[ru]=Повернуть на 180°
+Name[tr]=180° döndür
 Name[zh_CN]=旋转 180°
 
 [Desktop Action rotate-270]
@@ -282,6 +297,7 @@ Name[es]=Girar -90°
 Name[pt]=Rodar -90°
 Name[fa]=چرخش ۹۰- درجه
 Name[ru]=Повернуть на -90°
+Name[tr]= -90° döndür
 Name[zh_CN]=旋转 -90°
 
 [Desktop Action rotate-custom]
@@ -298,6 +314,7 @@ Name[es]=Giro personalizado
 Name[pt]=Rotação personalizada
 Name[fa]=چرخش سفارشی
 Name[ru]=Произвольный поворот
+Name[tr]=Özel döndürme
 Name[zh_CN]=自定义旋转
 
 [Desktop Action auto]
@@ -314,6 +331,7 @@ Name[es]=Giro automático (Exif)
 Name[pt]=Rotação automática (Exif)
 Name[fa]=چرخش خودکار (Exif)
 Name[ru]=Автоповорот (Exif)
+Name[tr]=Otomatik döndür (Exif)
 Name[zh_CN]=自动旋转 (Exif)
 
 ################################################################################
@@ -332,6 +350,7 @@ Name[es]=Voltear verticalmente
 Name[pt]=Inverter verticalmente
 Name[fa]=واژگونی عمودی
 Name[ru]=Отразить вертикально
+Name[tr]=Dikey çevir
 Name[zh_CN]=垂直翻转
 
 [Desktop Action flop]
@@ -348,4 +367,5 @@ Name[es]=Voltear horizontalmente
 Name[pt]=Inverter horizontalmente
 Name[fa]=واژگونی افقی
 Name[ru]=Отразить горизонтально
+Name[tr]=Yatay çevir
 Name[zh_CN]=水平翻转

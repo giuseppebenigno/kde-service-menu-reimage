@@ -1346,6 +1346,126 @@ load_language_ru () {
 	msg_base64_finish_title="Конвертация \"${name}\" в Base64"
 }
 
+load_language_tr () {
+	msg_common_software_not_found_title="Yazılım bulunamadı"
+	msg_common_mogrify_not_found_text="ImageMagick yazılımı bulunamadı! Lütfen kurun."
+	msg_common_convert_not_found_text="ImageMagick yazılımı bulunamadı! Lütfen kurun."
+	msg_common_montage_not_found_text="ImageMagick yazılımı bulunamadı! Lütfen kurun."
+	msg_common_jhead_not_found_text="jhead yazılımı bulunamadı! Lütfen kurun."
+	msg_common_webp_not_found_text="webp yazılımı bulunamadı! Lütfen kurun."
+	msg_common_action_not_found_text="İstenen işlem uygulanmadı."
+	msg_common_overwrite_text="Kaydedilecek görüntüler işlenen görüntülerle aynı isme sahipse,${new_line}üzerine yazmak istiyor musunuz?"
+	msg_common_abort="İşlem kullanıcı tarafından durduruldu."
+	msg_common_file_not_found="\"${name}\" dosyası bulunamadı!"
+	msg_common_name_error="\"${name}\" dosya adı tanınan bir tarih formatıyla eşleşmiyor.${new_line}${new_line}Ad şu tipte olmalıdır: YYYY-MM-DD_HHMMSS.jpg"
+	msg_common_start="Başlatılıyor ... "
+	msg_common_progress_text="$quantity dosyadan $processed. dosya işleniyor ($(basename "${input}"))"
+	msg_common_finish_ok="Tamamlandı."
+	msg_common_finish_error="Bir hata oluştu."
+	msg_common_transparent_unsupported_text="JPEG formatı şeffaflığı desteklemez.${new_line}PNG dosyasına dönüştürülüyor."
+
+	msg_agif_title="Dosyaları hareketli GIF'e dönüştür"
+	msg_agif_delay_input_text="Her karenin süresini saniyenin yüzde biri olarak girin:${new_line}(100 = 1 saniye)"
+	msg_agif_loop_input_text="Döngüsel oynatma istiyor musunuz?"
+	msg_agif_cicles_number_input_text="Animasyon tekrar sayısını girin:"
+	msg_agif_finish_title="Dosyaları hareketli GIF'e dönüştür"
+
+	msg_border_title="Kenarlık ekle"
+	msg_border_size_input_text="Kenarlık boyutunu yüzde veya piksel olarak girin.${new_line}${new_line}Geçerli değerler şunlar olabilir: 10% veya 50"
+	msg_border_finish_title="\"${name}\" dosyasına kenarlık ekle"
+
+	msg_colorspace_title="Renk uzayı \"${value}\" olarak değiştiriliyor"
+	msg_colorspace_finish_title="\"${name}\" renk uzayı değiştiriliyor"
+
+	msg_compress_title="\"${value}\" kalitesinde görüntü sıkıştırma"
+	msg_compress_quality_input_text="Kaliteyi girin:"
+	msg_compress_finish_title="\"${name}\" sıkıştırılıyor"
+
+	msg_convert_title="Dosyayı \"${value}\" formatına dönüştür"
+	msg_convert_format_input_text="İstediğiniz formatı girin.${new_line}Tam listeyi konsoldan şu komutla alabilirsiniz: mogrify -list format${new_line}veya ImageMagick kılavuzuna bakın."
+	msg_convert_finish_title="\"${name}\" dönüştürülüyor"
+
+	msg_favicons_title="Favicon oluşturma"
+	msg_favicons_finish_title="\"${name}\" dosyasından favicon oluşturuluyor"
+
+	msg_montage_title="Görüntü ekle"
+	msg_montage_finish_title="\"${name}\" dosyasına görüntü ekle"
+
+	msg_optimize_title="Web için optimize et"
+	msg_optimize_finish_title="\"${name}\" optimize ediliyor"
+
+	msg_overturn_title="Dosyayı \"${value}\" yönüne çevir"
+	msg_overturn_finish_title="\"${name}\" çevriliyor"
+
+	msg_resize_title="Görüntü boyutu \"${value}\" olarak değiştiriliyor"
+	msg_resize_scale_input_text="Ölçek faktörünü yüzde olarak veya her yön için istenen maksimum boyutu girin.${new_line}Yüzde veya piksel boyutu seçebilirsiniz.${new_line}${new_line}Geçerli değerler şunlar olabilir: 30% veya 1024x768"
+	msg_resize_finish_title="\"${name}\" boyutu değiştiriliyor"
+
+	msg_rotate_title="Dosyayı \"${value}\" açısıyla döndür"
+	msg_rotate_angle_input_text="İstediğiniz döndürme açısını girin:"
+	msg_rotate_finish_title="\"${name}\" döndürülüyor"
+
+	msg_sepia_title="Sepya filtresi"
+	msg_sepia_finish_title="\"${name}\" üzerine sepya filtresi"
+
+	msg_shadow_title="Gölge ekle"
+	msg_shadow_finish_title="\"${name}\" üzerine gölge"
+
+	msg_timestamp_title="Zaman damgası ekle"
+	msg_timestamp_finish_title="\"${name}\" dosyasına zaman damgası ekle"
+
+	msg_transparent2color_title="Şeffaflığı renge dönüştür"
+	msg_transparent2color_finish_title="\"${name}\" şeffaflığı renge dönüştürülüyor"
+
+	msg_rfe_title="Exif verisinden dosyayı yeniden adlandır"
+	msg_rfe_no_metadata="Görüntü meta veri içermiyor olabilir."
+	msg_rfe_finish_title="\"${name}\" dosyası yeniden adlandırılıyor"
+
+	msg_rff_title="Dosya tarihinden dosyayı yeniden adlandır"
+	msg_rff_finish_title="\"${name}\" dosyası yeniden adlandırılıyor"
+
+	msg_sffe_title="Exif verisinden dosya tarihini ayarla"
+	msg_sffe_no_metadata="Görüntü meta veri içermiyor olabilir."
+	msg_sffe_finish_title="\"${name}\" tarihi ayarlanıyor"
+
+	msg_sffn_title="Dosya adından dosya tarihini ayarla"
+	msg_sffn_finish_title="\"${name}\" tarihi ayarlanıyor"
+
+	msg_seff_title="Dosya tarihinden Exif tarihini ayarla"
+	msg_seff_finish_title="\"${name}\" tarihi ayarlanıyor"
+
+	msg_sefn_title="Dosya adından Exif tarihini ayarla"
+	msg_sefn_finish_title="\"${name}\" tarihi ayarlanıyor"
+
+	msg_ac_title="Yorum ekle"
+	msg_ac_comment_input_text="Eklenecek yorumu yazın:"
+	msg_ac_finish_title="\"${name}\" dosyasına yorum ekleniyor"
+
+	msg_ve_title="Meta verileri görüntüle"
+	msg_ve_finish_title="\"${name}\" meta verileri görüntüleniyor"
+
+	msg_ee_title="Meta verileri dışa aktar"
+	msg_ee_finish_title="\"${name}\" dosyasından meta veriler dışa aktarılıyor"
+
+	msg_dc_title="Yorumu sil"
+	msg_dc_finish_title="\"${name}\" yorumu siliniyor"
+
+	msg_de_title="Exif bölümünü temizle"
+	msg_de_finish_title="\"${name}\" dosyasından Exif bölümü temizleniyor"
+
+	msg_di_title="IPTC bölümünü sil"
+	msg_di_finish_title="\"${name}\" dosyasından IPTC bölümü siliniyor"
+
+	msg_dx_title="XMP bölümünü sil"
+	msg_dx_finish_title="\"${name}\" dosyasından XMP bölümü siliniyor"
+
+	msg_purejpg_title="Tüm gereksiz verileri sil"
+	msg_purejpg_finish_title="\"${name}\" dosyasından tüm gereksiz veriler siliniyor"
+
+	msg_base64_title="Base64'e dönüştür"
+	msg_base64_finish_title="\"${name}\" Base64'e dönüştürülüyor"
+}
+
 load_language_zh () {
 	msg_common_software_not_found_title="软件未找到"
 	msg_common_mogrify_not_found_text="找不到 ImageMagick 软件！请安装它。"
@@ -1506,6 +1626,9 @@ load_language () {
 			;;
 		ru*)
 			load_language_ru
+			;;
+		tr*)
+			load_language_tr
 			;;
 		zh*)
 			load_language_zh

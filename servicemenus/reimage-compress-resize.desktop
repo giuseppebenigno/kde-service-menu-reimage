@@ -34,6 +34,7 @@ X-KDE-Submenu[es]=ReImage - Comprimir y redimensionar
 X-KDE-Submenu[pt]=ReImage - Comprimir e redimensionar
 X-KDE-Submenu[fa]=ReImage - فشرده‌سازی و تغییر اندازه
 X-KDE-Submenu[ru]=ReImage - Сжатие и изменение размера
+X-KDE-Submenu[tr]=ReImage - Sıkıştır ve yeniden boyutlandır
 X-KDE-Submenu[zh_CN]=ReImage - 压缩与调整大小
 
 ################################################################################
@@ -52,6 +53,7 @@ Name[es]=Hacer progresivo
 Name[pt]=Tornar progressivo
 Name[fa]=پیشرونده کردن
 Name[ru]=Сделать прогрессивным
+Name[tr]=Aşamalı yap
 Name[zh_CN]=渐进式处理
 
 [Desktop Action optimize]
@@ -68,6 +70,7 @@ Name[es]=Optimización web completa
 Name[pt]=Otimização web completa
 Name[fa]=بهینه‌سازی کامل وب
 Name[ru]=Полная оптимизация для веб
+Name[tr]=Web için tam optimizasyon
 Name[zh_CN]=完整网页优化
 
 [Desktop Action compress-50]
@@ -84,6 +87,7 @@ Name[es]=Comprimir al 50%
 Name[pt]=Comprimir para 50%
 Name[fa]=فشرده‌سازی به ۵۰٪
 Name[ru]=Сжать до 50%
+Name[tr]=%50 oranında sıkıştır
 Name[zh_CN]=压缩至 50%
 
 [Desktop Action compress-70]
@@ -100,6 +104,7 @@ Name[es]=Comprimir al 70%
 Name[pt]=Comprimir para 70%
 Name[fa]=فشرده‌سازی به ۷۰٪
 Name[ru]=Сжать до 70%
+Name[tr]=%70 oranında sıkıştır
 Name[zh_CN]=压缩至 70%
 
 [Desktop Action compress-75]
@@ -116,6 +121,7 @@ Name[es]=Comprimir al 75%
 Name[pt]=Comprimir para 75%
 Name[fa]=فشرده‌سازی به ۷۵٪
 Name[ru]=Сжать до 75%
+Name[tr]=%75 oranında sıkıştır
 Name[zh_CN]=压缩至 75%
 
 [Desktop Action compress-80]
@@ -132,6 +138,7 @@ Name[es]=Comprimir al 80%
 Name[pt]=Comprimir para 80%
 Name[fa]=فشرده‌سازی به ۸۰٪
 Name[ru]=Сжать до 80%
+Name[tr]=%80 oranında sıkıştır
 Name[zh_CN]=压缩至 80%
 
 [Desktop Action compress-90]
@@ -148,6 +155,7 @@ Name[es]=Comprimir al 90%
 Name[pt]=Comprimir para 90%
 Name[fa]=فشرده‌سازی به ۹۰٪
 Name[ru]=Сжать до 90%
+Name[tr]=%90 oranında sıkıştır
 Name[zh_CN]=压缩至 90%
 
 [Desktop Action custom-compress]
@@ -164,6 +172,7 @@ Name[es]=Calidad personalizada
 Name[pt]=Qualidade personalizada
 Name[fa]=کیفیت سفارشی
 Name[ru]=Выбрать качество
+Name[tr]=Özel kalite
 Name[zh_CN]=自定义质量
 
 ################################################################################
@@ -182,6 +191,7 @@ Name[es]=Redimensionar al 25%
 Name[pt]=Redimensionar para 25%
 Name[fa]=تغییر اندازه به ۲۵٪
 Name[ru]=Изменить размер до 25%
+Name[tr]=%25 boyutuna getir
 Name[zh_CN]=调整大小至 25%
 
 [Desktop Action resize-50]
@@ -198,6 +208,7 @@ Name[es]=Redimensionar al 50%
 Name[pt]=Redimensionar para 50%
 Name[fa]=تغییر اندازه به ۵۰٪
 Name[ru]=Изменить размер до 50%
+Name[tr]=%50 boyutuna getir
 Name[zh_CN]=调整大小至 50%
 
 [Desktop Action resize-75]
@@ -214,6 +225,7 @@ Name[es]=Redimensionar al 75%
 Name[pt]=Redimensionar para 75%
 Name[fa]=تغییر اندازه به ۷۵٪
 Name[ru]=Изменить размер до 75%
+Name[tr]=%75 boyutuna getir
 Name[zh_CN]=调整大小至 75%
 
 ################################################################################
@@ -232,6 +244,7 @@ Name[es]=Redimensionar a 300x225 px
 Name[pt]=Redimensionar para 300x225 px
 Name[fa]=تغییر اندازه به ۳۰۰x۲۲۵ پیکسل
 Name[ru]=Изменить размер до 300x225 px
+Name[tr]=300x225 px boyutuna getir
 Name[zh_CN]=调整大小至 300x225 像素
 
 [Desktop Action resize-600x450]
@@ -248,6 +261,7 @@ Name[es]=Redimensionar a 600x450 px
 Name[pt]=Redimensionar para 600x450 px
 Name[fa]=تغییر اندازه به ۶۰۰x۴۵۰ پیکسل
 Name[ru]=Изменить размер до 600x450 px
+Name[tr]=600x450 px boyutuna getir
 Name[zh_CN]=调整大小至 600x450 像素
 
 [Desktop Action resize-640x480]
@@ -264,6 +278,7 @@ Name[es]=Redimensionar a 640x480 px
 Name[pt]=Redimensionar para 640x480 px
 Name[fa]=تغییر اندازه به ۶۴۰x۴۸۰ پیکسل
 Name[ru]=Изменить размер до 640x480 px
+Name[tr]=640x480 px boyutuna getir
 Name[zh_CN]=调整大小至 640x480 像素
 
 [Desktop Action resize-800x600]
@@ -280,6 +295,7 @@ Name[es]=Redimensionar a 800x600 px
 Name[pt]=Redimensionar para 800x600 px
 Name[fa]=تغییر اندازه به ۸۰۰x۶۰۰ پیکسل
 Name[ru]=Изменить размер до 800x600 px
+Name[tr]=800x600 px boyutuna getir
 Name[zh_CN]=调整大小至 800x600 像素
 
 [Desktop Action resize-1024x768]
@@ -296,6 +312,7 @@ Name[es]=Redimensionar a 1024x768 px
 Name[pt]=Redimensionar para 1024x768 px
 Name[fa]=تغییر اندازه به ۱۰۲۴x۷۶۸ پیکسل
 Name[ru]=Изменить размер до 1024x768 px
+Name[tr]=1024x768 px boyutuna getir
 Name[zh_CN]=调整大小至 1024x768 像素
 
 [Desktop Action resize-1200x630]
@@ -312,6 +329,7 @@ Name[es]=Redimensionar a 1200x630 px (Social OG)
 Name[pt]=Redimensionar para 1200x630 px (Social OG)
 Name[fa]=تغییر اندازه به ۱۲۰۰x۶۳۰ پیکسل (Social OG)
 Name[ru]=Изменить размер до 1200x630 px (Social OG)
+Name[tr]=1200x630 px boyutuna getir (Social OG)
 Name[zh_CN]=调整大小至 1200x630 像素 (Social OG)
 
 [Desktop Action resize-1200x900]
@@ -328,6 +346,7 @@ Name[es]=Redimensionar a 1200x900 px
 Name[pt]=Redimensionar para 1200x900 px
 Name[fa]=تغییر اندازه به ۱۲۰۰x۹۰۰ پیکسل
 Name[ru]=Изменить размер до 1200x900 px
+Name[tr]=1200x900 px boyutuna getir
 Name[zh_CN]=调整大小至 1200x900 像素
 
 [Desktop Action resize-1400x1050]
@@ -344,6 +363,7 @@ Name[es]=Redimensionar a 1400x1050 px
 Name[pt]=Redimensionar para 1400x1050 px
 Name[fa]=تغییر اندازه به ۱۴۰۰x۱۰۵۰ پیکسل
 Name[ru]=Изменить размер до 1400x1050 px
+Name[tr]=1400x1050 px boyutuna getir
 Name[zh_CN]=调整大小至 1400x1050 像素
 
 [Desktop Action resize-1920x1080]
@@ -360,6 +380,7 @@ Name[es]=Redimensionar a 1920x1080 px
 Name[pt]=Redimensionar para 1920x1080 px
 Name[fa]=تغییر اندازه به ۱۹۲۰x۱۰۸۰ پیکسل
 Name[ru]=Изменить размер до 1920x1080 px
+Name[tr]=1920x1080 px boyutuna getir
 Name[zh_CN]=调整大小至 1920x1080 像素
 
 ################################################################################
@@ -378,4 +399,5 @@ Name[es]=Redimensionamiento personalizado
 Name[pt]=Redimensionamento personalizado
 Name[fa]=تغییر اندازه سفارشی
 Name[ru]=Произвольное изменение размера
+Name[tr]=Özel boyutlandırma
 Name[zh_CN]=自定义调整大小

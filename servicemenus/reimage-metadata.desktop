@@ -35,6 +35,7 @@ X-KDE-Submenu[pt]=ReImage - Metadados
 X-KDE-Submenu[fa]=ReImage - متادیتا
 X-KDE-Submenu[zh_CN]=ReImage - 元数据
 X-KDE-Submenu[ru]=ReImage - Метаданные
+X-KDE-Submenu[tr]=ReImage - Meta veriler
 
 ################################################################################
 
@@ -53,6 +54,7 @@ Name[pt]=Renomear a partir da data Exif
 Name[fa]=تغییر نام بر اساس تاریخ Exif
 Name[zh_CN]=按 Exif 日期重命名
 Name[ru]=Переименовать по дате Exif
+Name[tr]=Exif tarihine göre yeniden adlandır
 
 [Desktop Action rff]
 Exec=reimage-kdialog rff %F
@@ -69,6 +71,7 @@ Name[pt]=Renomear a partir da data do ficheiro
 Name[fa]=تغییر نام بر اساس تاریخ فایل
 Name[zh_CN]=按文件日期重命名
 Name[ru]=Переименовать по дате файла
+Name[tr]=Dosya tarihine göre yeniden adlandır
 
 ################################################################################
 
@@ -87,6 +90,7 @@ Name[pt]=Definir data do ficheiro a partir de Exif
 Name[fa]=تنظیم تاریخ فایل از Exif
 Name[zh_CN]=从 Exif 设置文件日期
 Name[ru]=Установить дату файла из Exif
+Name[tr]=Exif verisinden dosya tarihini ayarla
 
 [Desktop Action sffn]
 Exec=reimage-kdialog sffn %F
@@ -103,6 +107,7 @@ Name[pt]=Definir data do ficheiro a partir do nome
 Name[fa]=تنظیم تاریخ فایل از نام
 Name[zh_CN]=从文件名设置文件日期
 Name[ru]=Установить дату файла из имени
+Name[tr]=Dosya adından dosya tarihini ayarla
 
 ################################################################################
 
@@ -121,6 +126,7 @@ Name[pt]=Definir data Exif a partir do ficheiro
 Name[fa]=تنظیم تاریخ Exif از فایل
 Name[zh_CN]=从文件设置 Exif 日期
 Name[ru]=Установить дату Exif из файла
+Name[tr]=Dosya verisinden Exif tarihini ayarla
 
 [Desktop Action sefn]
 Exec=reimage-kdialog sefn %F
@@ -137,6 +143,7 @@ Name[pt]=Definir data Exif a partir do nome
 Name[fa]=تنظیم تاریخ Exif از نام
 Name[zh_CN]=从文件名设置 Exif 日期
 Name[ru]=Установить дату Exif из имени
+Name[tr]=Dosya adından Exif tarihini ayarla
 
 ################################################################################
 
@@ -155,6 +162,7 @@ Name[pt]=Adicionar comentário
 Name[fa]=افزودن یادداشت
 Name[zh_CN]=添加注释
 Name[ru]=Добавить комментарий
+Name[tr]=Yorum ekle
 
 [Desktop Action view-metadata]
 Exec=reimage-kdialog ve %F
@@ -171,6 +179,7 @@ Name[pt]=Visualizar metadados
 Name[fa]=مشاهده متادیتا
 Name[zh_CN]=查看元数据
 Name[ru]=Просмотреть метаданные
+Name[tr]=Meta verileri görüntüle
 
 [Desktop Action extract-metadata]
 Exec=reimage-kdialog ee %F
@@ -187,6 +196,7 @@ Name[pt]=Extrair metadados para um ficheiro
 Name[fa]=استخراج متادیتا به فایل
 Name[zh_CN]=提取元数据到文件
 Name[ru]=Извлечь метаданные в файл
+Name[tr]=Meta verileri dosyaya aktar
 
 ################################################################################
 
@@ -205,6 +215,7 @@ Name[pt]=Eliminar campo de comentário
 Name[fa]=حذف فیلد یادداشت
 Name[zh_CN]=删除注释字段
 Name[ru]=Удалить поле комментария
+Name[tr]=Yorum alanını sil
 
 [Desktop Action del-exif]
 Exec=reimage-kdialog de %F
@@ -221,6 +232,7 @@ Name[pt]=Limpar secção Exif
 Name[fa]=حذف بخش Exif
 Name[zh_CN]=清除 Exif 部分
 Name[ru]=Очистить секцию Exif
+Name[tr]=Exif bölümünü temizle
 
 [Desktop Action del-iptc]
 Exec=reimage-kdialog di %F
@@ -237,6 +249,7 @@ Name[pt]=Eliminar secção IPTC
 Name[fa]=حذف بخش IPTC
 Name[zh_CN]=删除 IPTC 部分
 Name[ru]=Удалить секцию IPTC
+Name[tr]=IPTC bölümünü sil
 
 [Desktop Action del-xmp]
 Exec=reimage-kdialog dx %F
@@ -253,6 +266,7 @@ Name[pt]=Eliminar secção XMP
 Name[fa]=حذف بخش XMP
 Name[zh_CN]=删除 XMP 部分
 Name[ru]=Удалить секцию XMP
+Name[tr]=XMP bölümünü sil
 
 [Desktop Action del-all]
 Exec=reimage-kdialog purejpg %F
@@ -269,6 +283,7 @@ Name[pt]=Eliminar todos os dados desnecessários
 Name[fa]=حذف تمام متادیتای غیرضروری
 Name[zh_CN]=删除所有不必要的数据
 Name[ru]=Удалить все метаданные
+Name[tr]=Tüm gereksiz verileri temizle
 
 ################################################################################
 
@@ -287,3 +302,4 @@ Name[pt]=Adicionar carimbo de data/hora a partir de Exif
 Name[fa]=افزودن برچسب زمان از Exif
 Name[zh_CN]=从 Exif 添加时间戳
 Name[ru]=Добавить отметку времени из Exif
+Name[tr]=Exif'ten zaman damgası ekle
