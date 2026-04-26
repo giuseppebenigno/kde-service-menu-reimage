@@ -866,6 +866,126 @@ load_language_it () {
 	msg_base64_finish_title="Conversione in Base64 di \"${name}\""
 }
 
+load_language_ja () {
+	msg_common_software_not_found_title="ソフトウェアが見つかりません"
+	msg_common_mogrify_not_found_text="ImageMagick ソフトウェアが見つかりません。インストールしてください。"
+	msg_common_convert_not_found_text="ImageMagick ソフトウェアが見つかりません。インストールしてください。"
+	msg_common_montage_not_found_text="ImageMagick ソフトウェアが見つかりません。インストールしてください。"
+	msg_common_jhead_not_found_text="jhead ソフトウェアが見つかりません。インストールしてください。"
+	msg_common_webp_not_found_text="webp ソフトウェアが見つかりません。インストールしてください。"
+	msg_common_action_not_found_text="要求されたアクションは実装されていません。"
+	msg_common_overwrite_text="保存する画像が処理中の画像と同じ名前の場合、${new_line}上書きしますか？"
+	msg_common_abort="ユーザーによって操作が中断されました。"
+	msg_common_file_not_found="ファイル \"${name}\" が見つかりません。"
+	msg_common_name_error="ファイル名 \"${name}\" が認識された日付形式と一致しません。${new_line}${new_line}名前は YYYY-MM-DD_HHMMSS.jpg の形式である必要があります。"
+	msg_common_start="初期化中 ... "
+	msg_common_progress_text="ファイル $processed / $quantity を処理中 ($(basename "${input}"))"
+	msg_common_finish_ok="完了しました。"
+	msg_common_finish_error="エラーが発生しました。"
+	msg_common_transparent_unsupported_text="JPEG 形式は透明度をサポートしていません。${new_line}PNG ファイルに変換します。"
+
+	msg_agif_title="ファイルをアニメーション GIF に変換"
+	msg_agif_delay_input_text="各フレームの表示時間を 1/100 秒単位で入力してください：${new_line}(100 = 1 秒)"
+	msg_agif_loop_input_text="ループ再生しますか？"
+	msg_agif_cicles_number_input_text="アニメーションの繰り返し回数を入力してください："
+	msg_agif_finish_title="ファイルをアニメーション GIF に変換"
+
+	msg_border_title="境界線を追加"
+	msg_border_size_input_text="境界線のサイズをパーセントまたはピクセルで入力してください。${new_line}${new_line}有効な値の例：10% または 50"
+	msg_border_finish_title="\"${name}\" に境界線を追加"
+
+	msg_colorspace_title="カラースペースを \"${value}\" に変更中"
+	msg_colorspace_finish_title="\"${name}\" のカラースペースを変更"
+
+	msg_compress_title="画質 \"${value}\" で画像を圧縮"
+	msg_compress_quality_input_text="画質を入力してください："
+	msg_compress_finish_title="\"${name}\" を圧縮"
+
+	msg_convert_title="ファイルを \"${value}\" 形式に変換"
+	msg_convert_format_input_text="希望する形式を入力してください。${new_line}完全なリストはコンソールで mogrify -list format を実行するか、${new_line}ImageMagick のマニュアルを参照してください。"
+	msg_convert_finish_title="\"${name}\" を変換"
+
+	msg_favicons_title="ファビコンの生成"
+	msg_favicons_finish_title="\"${name}\" からファビコンを生成"
+
+	msg_montage_title="画像を結合"
+	msg_montage_finish_title="\"${name}\" に画像を結合"
+
+	msg_optimize_title="ウェブ用に最適化"
+	msg_optimize_finish_title="\"${name}\" を最適化"
+
+	msg_overturn_title="ファイルを \"${value}\" に反転"
+	msg_overturn_finish_title="\"${name}\" を反転"
+
+	msg_resize_title="画像サイズを \"${value}\" に変更"
+	msg_resize_scale_input_text="拡大縮小率をパーセントで入力するか、各方向の希望する最大サイズを入力してください。${new_line}パーセントまたはピクセルサイズを選択できます。${new_line}${new_line}有効な値の例：30% または 1024x768"
+	msg_resize_finish_title="\"${name}\" のサイズを変更"
+
+	msg_rotate_title="ファイルを角度 \"${value}\" で回転"
+	msg_rotate_angle_input_text="回転角度を入力してください："
+	msg_rotate_finish_title="\"${name}\" を回転"
+
+	msg_sepia_title="セピアフィルター"
+	msg_sepia_finish_title="\"${name}\" にセピアフィルターを適用"
+
+	msg_shadow_title="ドロップシャドウを追加"
+	msg_shadow_finish_title="\"${name}\" にドロップシャドウを追加"
+
+	msg_timestamp_title="タイムスタンプを追加"
+	msg_timestamp_finish_title="\"${name}\" にタイムスタンプを追加"
+
+	msg_transparent2color_title="透明部分を色に変更"
+	msg_transparent2color_finish_title="\"${name}\" の透明部分を色に変更"
+
+	msg_rfe_title="Exif メタデータからファイル名を変更"
+	msg_rfe_no_metadata="画像にメタデータが含まれていない可能性があります。"
+	msg_rfe_finish_title="ファイル \"${name}\" の名前を変更"
+
+	msg_rff_title="ファイル日付からファイル名を変更"
+	msg_rff_finish_title="ファイル \"${name}\" の名前を変更"
+
+	msg_sffe_title="Exif メタデータからファイル日付を設定"
+	msg_sffe_no_metadata="画像にメタデータが含まれていない可能性があります。"
+	msg_sffe_finish_title="\"${name}\" の日付を設定"
+
+	msg_sffn_title="ファイル名からファイル日付を設定"
+	msg_sffn_finish_title="\"${name}\" の日付を設定"
+
+	msg_seff_title="ファイル日付から Exif 日付を設定"
+	msg_seff_finish_title="\"${name}\" の日付を設定"
+
+	msg_sefn_title="ファイル名から Exif 日付を設定"
+	msg_sefn_finish_title="\"${name}\" の日付を設定"
+
+	msg_ac_title="コメントを追加"
+	msg_ac_comment_input_text="追加するコメントを入力してください："
+	msg_ac_finish_title="\"${name}\" にコメントを追加"
+
+	msg_ve_title="メタデータを表示"
+	msg_ve_finish_title="\"${name}\" のメタデータを表示"
+
+	msg_ee_title="メタデータを抽出"
+	msg_ee_finish_title="\"${name}\" からメタデータを抽出"
+
+	msg_dc_title="コメントを削除"
+	msg_dc_finish_title="\"${name}\" のコメントを削除"
+
+	msg_de_title="Exif セクションをクリア"
+	msg_de_finish_title="\"${name}\" の Exif セクションをクリア"
+
+	msg_di_title="IPTC セクションを削除"
+	msg_di_finish_title="\"${name}\" の IPTC セクションを削除"
+
+	msg_dx_title="XMP セクションを削除"
+	msg_dx_finish_title="\"${name}\" の XMP セクションを削除"
+
+	msg_purejpg_title="すべての不要なデータを削除"
+	msg_purejpg_finish_title="\"${name}\" のすべての不要なデータを削除"
+
+	msg_base64_title="Base64 に変換"
+	msg_base64_finish_title="\"${name}\" を Base64 に変換"
+}
+
 load_language_pt () {
 	msg_common_software_not_found_title="Software não encontrado"
 	msg_common_mogrify_not_found_text="O software ImageMagick não foi encontrado! Por favor, instale-o."
@@ -1254,6 +1374,9 @@ load_language () {
 			;;
 		it*)
 			load_language_it
+			;;
+		ja*)
+			load_language_ja
 			;;
 		pt*)
 			load_language_pt
