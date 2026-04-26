@@ -27,6 +27,7 @@ X-KDE-Submenu=ReImage - Metadata
 X-KDE-Submenu[it]=ReImage - Metadati
 X-KDE-Submenu[de]=ReImage - Metadaten
 X-KDE-Submenu[fr]=ReImage - Métadonnées
+X-KDE-Submenu[es]=ReImage - Metadatos
 
 ################################################################################
 
@@ -37,6 +38,7 @@ Name=Rename from Exif date
 Name[it]=Rinomina dalla data Exif
 Name[de]=Nach Exif-Datum umbenennen
 Name[fr]=Renommer selon la date Exif
+Name[es]=Renombrar según la fecha Exif
 
 [Desktop Action rff]
 Exec=reimage-kdialog rff %F
@@ -45,6 +47,7 @@ Name=Rename from file's date
 Name[it]=Rinomina dalla data del file
 Name[de]=Nach Dateidatum umbenennen
 Name[fr]=Renommer selon la date du fichier
+Name[es]=Renombrar según la fecha del archivo
 
 ################################################################################
 
@@ -55,6 +58,7 @@ Name=Set file date from Exif date
 Name[it]=Imposta la data del file a quella Exif
 Name[de]=Dateidatum anhand von Exif setzen
 Name[fr]=Régler la date du fichier sur la date Exif
+Name[es]=Establecer fecha del archivo desde Exif
 
 [Desktop Action sffn]
 Exec=reimage-kdialog sffn %F
@@ -63,6 +67,7 @@ Name=Set file date from file's name
 Name[it]=Imposta la data del file a quella del nome
 Name[de]=Dateidatum anhand des Namens setzen
 Name[fr]=Régler la date du fichier sur le nom
+Name[es]=Establecer fecha del archivo desde el nombre
 
 ################################################################################
 
@@ -73,6 +78,7 @@ Name=Set Exif date from file's date
 Name[it]=Imposta la data Exif a quella del file
 Name[de]=Exif-Datum anhand des Dateidatums setzen
 Name[fr]=Régler la date Exif sur la date du fichier
+Name[es]=Establecer fecha Exif desde el archivo
 
 [Desktop Action sefn]
 Exec=reimage-kdialog sefn %F
@@ -81,6 +87,7 @@ Name=Set Exif date from file's name
 Name[it]=Imposta la data Exif a quella del nome
 Name[de]=Exif-Datum anhand des Namens setzen
 Name[fr]=Régler la date Exif sur le nom
+Name[es]=Establecer fecha Exif desde el nombre
 
 ################################################################################
 
@@ -91,6 +98,7 @@ Name=Add comment
 Name[it]=Aggiungi un commento
 Name[de]=Kommentar hinzufügen
 Name[fr]=Ajouter un commentaire
+Name[es]=Añadir comentario
 
 [Desktop Action view-metadata]
 Exec=reimage-kdialog ve %F
@@ -99,6 +107,7 @@ Name=View metadata
 Name[it]=Visualizza metadati
 Name[de]=Metadaten anzeigen
 Name[fr]=Voir les métadonnées
+Name[es]=Ver metadatos
 
 [Desktop Action extract-metadata]
 Exec=reimage-kdialog ee %F
@@ -107,6 +116,7 @@ Name=Extract metadata to file
 Name[it]=Estrai metadati in un file
 Name[de]=Metadaten in Datei extrahieren
 Name[fr]=Extraire les métadonnées vers un fichier
+Name[es]=Extraer metadatos a un archivo
 
 ################################################################################
 
@@ -117,6 +127,7 @@ Name=Delete comment field
 Name[it]=Cancella commento
 Name[de]=Kommentarfeld löschen
 Name[fr]=Supprimer le champ commentaire
+Name[es]=Eliminar campo de comentario
 
 [Desktop Action del-exif]
 Exec=reimage-kdialog de %F
@@ -125,6 +136,7 @@ Name=Strip Exif section
 Name[it]=Cancella le informazioni Exif
 Name[de]=Exif-Bereich entfernen
 Name[fr]=Supprimer la section Exif
+Name[es]=Eliminar sección Exif
 
 [Desktop Action del-iptc]
 Exec=reimage-kdialog di %F
@@ -133,6 +145,7 @@ Name=Delete IPTC section
 Name[it]=Cancella le informazioni IPTC
 Name[de]=IPTC-Bereich löschen
 Name[fr]=Supprimer la section IPTC
+Name[es]=Eliminar sección IPTC
 
 [Desktop Action del-xmp]
 Exec=reimage-kdialog dx %F
@@ -141,6 +154,7 @@ Name=Delete XMP section
 Name[it]=Cancella le informazioni XMP
 Name[de]=XMP-Bereich löschen
 Name[fr]=Supprimer la section XMP
+Name[es]=Eliminar sección XMP
 
 [Desktop Action del-all]
 Exec=reimage-kdialog purejpg %F
@@ -149,6 +163,7 @@ Name=Strip all unnecessary data
 Name[it]=Cancella tutti i metadati
 Name[de]=Alle Metadaten entfernen
 Name[fr]=Supprimer toutes les données inutiles
+Name[es]=Eliminar todos los datos innecesarios
 
 ################################################################################
 
@@ -159,3 +174,4 @@ Name=Add timestamp from Exif
 Name[it]=Aggiungi timestamp da Exif
 Name[de]=Zeitstempel aus Exif hinzufügen
 Name[fr]=Ajouter l'horodatage à partir d'Exif
+Name[es]=Añadir marca de tiempo desde Exif

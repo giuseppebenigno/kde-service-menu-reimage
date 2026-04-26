@@ -27,6 +27,7 @@ X-KDE-Submenu=ReImage - Convert and rotate
 X-KDE-Submenu[it]=ReImage - Conversione e rotazione
 X-KDE-Submenu[de]=ReImage - Konvertieren und Drehen
 X-KDE-Submenu[fr]=ReImage - Conversion et rotation
+X-KDE-Submenu[es]=ReImage - Convertir y girar
 
 ################################################################################
 
@@ -37,6 +38,7 @@ Name=Convert to GIF
 Name[it]=Converti in GIF
 Name[de]=In GIF konvertieren
 Name[fr]=Convertir en GIF
+Name[es]=Convertir a GIF
 
 [Desktop Action jpeg]
 Exec=reimage-kdialog convert jpg %F
@@ -45,6 +47,7 @@ Name=Convert to JPEG
 Name[it]=Converti in JPEG
 Name[de]=In JPEG konvertieren
 Name[fr]=Convertir en JPEG
+Name[es]=Convertir a JPEG
 
 [Desktop Action png]
 Exec=reimage-kdialog convert png %F
@@ -53,6 +56,7 @@ Name=Convert to PNG
 Name[it]=Converti in PNG
 Name[de]=In PNG konvertieren
 Name[fr]=Convertir en PNG
+Name[es]=Convertir a PNG
 
 [Desktop Action tiff]
 Exec=reimage-kdialog convert tif %F
@@ -61,6 +65,7 @@ Name=Convert to TIFF
 Name[it]=Converti in TIFF
 Name[de]=In TIFF konvertieren
 Name[fr]=Convertir en TIFF
+Name[es]=Convertir a TIFF
 
 [Desktop Action webp]
 Exec=reimage-kdialog convert webp %F
@@ -69,6 +74,7 @@ Name=Convert to WEBP
 Name[it]=Converti in WEBP
 Name[de]=In WEBP konvertieren
 Name[fr]=Convertir en WEBP
+Name[es]=Convertir a WEBP
 
 ################################################################################
 
@@ -79,6 +85,7 @@ Name=Convert to PDF
 Name[it]=Converti in PDF
 Name[de]=In PDF konvertieren
 Name[fr]=Convertir en PDF
+Name[es]=Convertir a PDF
 
 [Desktop Action pdfa]
 Exec=reimage-kdialog convert pdfa %F
@@ -87,6 +94,7 @@ Name=Convert to PDF/A-1
 Name[it]=Converti in PDF/A-1
 Name[de]=In PDF/A-1 konvertieren
 Name[fr]=Convertir en PDF/A-1
+Name[es]=Convertir a PDF/A-1
 
 ################################################################################
 
@@ -97,6 +105,7 @@ Name=Generate animated GIF
 Name[it]=Genera GIF animata
 Name[de]=Animierte GIF erstellen
 Name[fr]=Générer un GIF animé
+Name[es]=Generar GIF animado
 
 [Desktop Action favicons]
 Exec=reimage-kdialog favicons all %F
@@ -105,6 +114,7 @@ Name=Generate favicons
 Name[it]=Genera favicons
 Name[de]=Favicons erstellen
 Name[fr]=Générer des favicons
+Name[es]=Generar favicons
 
 [Desktop Action base64]
 Exec=reimage-kdialog base64 %F
@@ -113,6 +123,7 @@ Name=Convert to Base64
 Name[it]=Converti in Base64
 Name[de]=In Base64 konvertieren
 Name[fr]=Convertir en Base64
+Name[es]=Convertir a Base64
 
 [Desktop Action convert-custom]
 Exec=reimage-kdialog convert custom %F
@@ -121,6 +132,7 @@ Name=Convert to format ...
 Name[it]=Formato personalizzato ...
 Name[de]=In Format konvertieren ...
 Name[fr]=Convertir au format ...
+Name[es]=Convertir a formato ...
 
 [Desktop Action formats]
 Exec=reimage-kdialog convert formats
@@ -129,6 +141,7 @@ Name=Formats list
 Name[it]=Elenco formati
 Name[de]=Formatliste
 Name[fr]=Liste des formats
+Name[es]=Lista de formatos
 
 ################################################################################
 
@@ -139,6 +152,7 @@ Name=Rotate 90°
 Name[it]=Ruota di 90°
 Name[de]=Um 90° drehen
 Name[fr]=Rotation de 90°
+Name[es]=Girar 90°
 
 [Desktop Action rotate-180]
 Exec=reimage-kdialog rotate 180 %F
@@ -147,6 +161,7 @@ Name=Rotate 180°
 Name[it]=Ruota di 180°
 Name[de]=Um 180° drehen
 Name[fr]=Rotation de 180°
+Name[es]=Girar 180°
 
 [Desktop Action rotate-270]
 Exec=reimage-kdialog rotate 270 %F
@@ -155,6 +170,7 @@ Name=Rotate (-90°)
 Name[it]=Ruota di -90°
 Name[de]=Um -90° drehen
 Name[fr]=Rotation de -90°
+Name[es]=Girar -90°
 
 [Desktop Action rotate-custom]
 Exec=reimage-kdialog rotate custom %F
@@ -163,6 +179,7 @@ Name=Rotate custom
 Name[it]=Angolo personalizzato
 Name[de]=Benutzerdefinierte Drehung
 Name[fr]=Rotation personnalisée
+Name[es]=Giro personalizado
 
 [Desktop Action auto]
 Exec=reimage-kdialog rotate auto %F
@@ -171,6 +188,7 @@ Name=Auto-rotate with Exif
 Name[it]=Auto-ruota tramite dati Exif
 Name[de]=Automatisch drehen (Exif)
 Name[fr]=Rotation automatique (Exif)
+Name[es]=Giro automático (Exif)
 
 ################################################################################
 
@@ -181,6 +199,7 @@ Name=Overturn vertically
 Name[it]=Ribalta verticalmente
 Name[de]=Vertikal spiegeln
 Name[fr]=Retourner verticalement
+Name[es]=Voltear verticalmente
 
 [Desktop Action flop]
 Exec=reimage-kdialog overturn flop %F
@@ -189,3 +208,4 @@ Name=Overturn horizontally
 Name[it]=Ribalta orizzontalmente
 Name[de]=Horizontal spiegeln
 Name[fr]=Retourner horizontalement
+Name[es]=Voltear horizontalmente
