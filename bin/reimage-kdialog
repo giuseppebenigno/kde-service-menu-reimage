@@ -993,14 +993,14 @@ manage_input_separately () {
 		"${qdbus_bin}" $dbus_ref setLabelText "${msg_common_progress_text}"
 
 		msg_finish_title=msg_${action}_finish_title
-		run_${action} && \
-			"${kdialog_bin}" --title "${!msg_finish_title}" --passivepopup "${msg_common_finish_ok}" 5 || \
+		run_${action} || \
 			{ "${qdbus_bin}" $dbus_ref close; "${kdialog_bin}" --icon configure --title "${!msg_finish_title}" --detailederror "${msg_common_finish_error}" "${msg}"; exit 2; }
 
 		"${qdbus_bin}" $dbus_ref org.freedesktop.DBus.Properties.Set org.kde.kdialog.ProgressDialog value $processed
 	done
 
 	"${qdbus_bin}" $dbus_ref close
+	"${kdialog_bin}" --title "${!msg_finish_title}" --passivepopup "${msg_common_finish_ok}" 5
 }
 
 manage_input_at_once () {

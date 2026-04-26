@@ -17,7 +17,7 @@
 #
 
 [Desktop Entry]
-Actions=progressive;optimize;_SEPARATOR_;compress-50;compress-70;compress-75;compress-80;compress-90;custom-compress;_SEPARATOR_;resize-25;resize-50;resize-75;_SEPARATOR_;resize-300x225;resize-600x450;resize-640x480;resize-800x600;resize-1024x768;resize-1200x900;resize-1400x1050;resize-1920x1080;custom-resize;_SEPARATOR_;
+Actions=progressive;optimize;_SEPARATOR_;compress-50;compress-70;compress-75;compress-80;compress-90;custom-compress;_SEPARATOR_;resize-25;resize-50;resize-75;_SEPARATOR_;resize-300x225;resize-600x450;resize-640x480;resize-800x600;resize-1024x768;resize-1200x630;resize-1200x900;resize-1400x1050;resize-1920x1080;custom-resize;_SEPARATOR_;
 MimeType=image/*
 Name=ReImage compress and resize service menu
 ServiceTypes=KonqPopupMenu/Plugin,image/*
@@ -127,6 +127,12 @@ Exec=reimage-kdialog resize 1024x768 %F
 Icon=image-resize-symbolic
 Name=Resize at 1024x768 px
 Name[it]=Ridimensiona a 1024x768 px
+
+[Desktop Action resize-1200x630]
+Exec=reimage-kdialog resize 1200x630 %F
+Icon=image-resize-symbolic
+Name=Resize at 1200x630 px (Social OG)
+Name[it]=Ridimensiona a 1200x630 px (Social OG)
 
 [Desktop Action resize-1200x900]
 Exec=reimage-kdialog resize 1200x900 %F
