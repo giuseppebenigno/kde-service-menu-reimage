@@ -265,6 +265,126 @@ load_language_en_US () {
 	msg_base64_finish_title="Convert to Base64 \"${name}\""
 }
 
+load_language_fr () {
+	msg_common_software_not_found_title="Logiciel non trouvé"
+	msg_common_mogrify_not_found_text="Le logiciel ImageMagick n'a pas été trouvé ! Veuillez l'installer."
+	msg_common_convert_not_found_text="Le logiciel ImageMagick n'a pas été trouvé ! Veuillez l'installer."
+	msg_common_montage_not_found_text="Le logiciel ImageMagick n'a pas été trouvé ! Veuillez l'installer."
+	msg_common_jhead_not_found_text="Le logiciel jhead n'a pas été trouvé ! Veuillez l'installer."
+	msg_common_webp_not_found_text="Le logiciel webp n'a pas été trouvé ! Veuillez l'installer."
+	msg_common_action_not_found_text="L'action demandée n'est pas implémentée."
+	msg_common_overwrite_text="Si les images à sauvegarder ont le même nom que celles à traiter,${new_line}voulez-vous les écraser ?"
+	msg_common_abort="Opération interrompue par l'utilisateur."
+	msg_common_file_not_found="Fichier \"${name}\" non trouvé !"
+	msg_common_name_error="Le nom du fichier \"${name}\" ne correspond pas à un format de date reconnu.${new_line}${new_line}Le nom doit être du type : YYYY-MM-DD_HHMMSS.jpg"
+	msg_common_start="Initialisation ... "
+	msg_common_progress_text="Traitement du fichier $processed sur $quantity ($(basename "${input}"))"
+	msg_common_finish_ok="Terminé."
+	msg_common_finish_error="Une erreur s'est produite."
+	msg_common_transparent_unsupported_text="Le format JPEG ne supporte pas la transparence.${new_line}Convertir en fichier PNG."
+
+	msg_agif_title="Convertir les fichiers en GIF animé"
+	msg_agif_delay_input_text="Entrez la durée d'une seule image, in centièmes de seconde :${new_line}(100 = 1 seconde)"
+	msg_agif_loop_input_text="Voulez-vous une lecture en boucle ?"
+	msg_agif_cicles_number_input_text="Tapez le nombre de répétitions de l'animation :"
+	msg_agif_finish_title="Convertir les fichiers en GIF animé"
+
+	msg_border_title="Ajouter une bordure"
+	msg_border_size_input_text="Tapez la taille de la bordure en pourcentage ou en pixels.${new_line}${new_line}Les valeurs valides peuvent être : 10% ou 50"
+	msg_border_finish_title="Ajout d'une bordure à \"${name}\""
+
+	msg_colorspace_title="Changement de l'espace colorimétrique en \"${value}\""
+	msg_colorspace_finish_title="Changement de l'espace colorimétrique de \"${name}\""
+
+	msg_compress_title="Compression d'image avec qualité \"${value}\""
+	msg_compress_quality_input_text="Tapez la qualité :"
+	msg_compress_finish_title="Compression de \"${name}\""
+
+	msg_convert_title="Convertir le fichier au format \"${value}\""
+	msg_convert_format_input_text="Tapez le format souhaité.${new_line}Une liste complète peut être obtenue depuis le shell avec : mogrify -list format${new_line}ou en consultant le manuel d'ImageMagick."
+	msg_convert_finish_title="Conversion de \"${name}\""
+
+	msg_favicons_title="Génération de favicons"
+	msg_favicons_finish_title="Génération de favicons à partir de \"${name}\""
+
+	msg_montage_title="Ajouter une image"
+	msg_montage_finish_title="Ajouter une image à \"${name}\""
+
+	msg_optimize_title="Optimisation pour le web"
+	msg_optimize_finish_title="Optimiser \"${name}\""
+
+	msg_overturn_title="Retourner le fichier en \"${value}\""
+	msg_overturn_finish_title="Retourner \"${name}\""
+
+	msg_resize_title="Redimensionnement de l'image \"${value}\""
+	msg_resize_scale_input_text="Tapez le facteur d'échelle en pourcentage ou la taille maximale souhaitée pour chaque direction.${new_line}Vous pouvez choisir un pourcentage ou une taille en pixels.${new_line}${new_line}Les valeurs valides peuvent être : 30% ou 1024x768"
+	msg_resize_finish_title="Redimensionnement de \"${name}\""
+
+	msg_rotate_title="Faire pivoter le fichier avec un angle de \"${value}\""
+	msg_rotate_angle_input_text="Entrez l'angle de rotation souhaité :"
+	msg_rotate_finish_title="Rotation de \"${name}\""
+
+	msg_sepia_title="Filtre sépia"
+	msg_sepia_finish_title="Filtre sépia sur \"${name}\""
+
+	msg_shadow_title="Ombre portée"
+	msg_shadow_finish_title="Ombre portée sur \"${name}\""
+
+	msg_timestamp_title="Ajouter l'horodatage"
+	msg_timestamp_finish_title="Ajouter l'horodatage à \"${name}\""
+
+	msg_transparent2color_title="Changer la transparence en couleur"
+	msg_transparent2color_finish_title="Changement de la transparence en couleur de \"${name}\""
+
+	msg_rfe_title="Renommer le fichier à partir des métadonnées Exif"
+	msg_rfe_no_metadata="Il est possible que l'image ne contienne pas de métadonnées."
+	msg_rfe_finish_title="Renommer le fichier \"${name}\""
+
+	msg_rff_title="Renommer le fichier à partir de sa date"
+	msg_rff_finish_title="Renommer le fichier \"${name}\""
+
+	msg_sffe_title="Régler la date du fichier à partir des métadonnées Exif"
+	msg_sffe_no_metadata="Il est possible que l'image ne contienne pas de métadonnées."
+	msg_sffe_finish_title="Réglage de la date de \"${name}\""
+
+	msg_sffn_title="Régler la date du fichier à partir de son nom"
+	msg_sffn_finish_title="Réglage de la date de \"${name}\""
+
+	msg_seff_title="Régler la date Exif à partir de la date du fichier"
+	msg_seff_finish_title="Réglage de la date de \"${name}\""
+
+	msg_sefn_title="Régler la date Exif à partir du nom du fichier"
+	msg_sefn_finish_title="Réglage de la date de \"${name}\""
+
+	msg_ac_title="Ajouter un commentaire"
+	msg_ac_comment_input_text="Écrivez le commentaire à ajouter :"
+	msg_ac_finish_title="Ajouter un commentaire dans \"${name}\""
+
+	msg_ve_title="Voir les métadonnées"
+	msg_ve_finish_title="Voir les métadonnées de \"${name}\""
+
+	msg_ee_title="Extraire les métadonnées"
+	msg_ee_finish_title="Extraire les métadonnées de \"${name}\""
+
+	msg_dc_title="Supprimer le commentaire"
+	msg_dc_finish_title="Supprimer le commentaire de \"${name}\""
+
+	msg_de_title="Supprimer la section Exif"
+	msg_de_finish_title="Supprimer la section Exif de \"${name}\""
+
+	msg_di_title="Supprimer la section IPTC"
+	msg_di_finish_title="Supprimer la section IPTC de \"${name}\""
+
+	msg_dx_title="Supprimer la section XMP"
+	msg_dx_finish_title="Supprimer la section XMP de \"${name}\""
+
+	msg_purejpg_title="Supprimer toutes les données inutiles"
+	msg_purejpg_finish_title="Supprimer toutes les données inutiles de \"${name}\""
+
+	msg_base64_title="Convertir en Base64"
+	msg_base64_finish_title="Convertir \"${name}\" en Base64"
+}
+
 load_language_it () {
 	msg_common_software_not_found_title="Software non trovato"
 	msg_common_mogrify_not_found_text="Il software ImageMagick non è stato trovato! Per favore, installalo."
@@ -397,11 +517,14 @@ load_language () {
 	[ -z "${lang}" ] && lang=${LANG%%.*}
 
 	case "${lang}" in
-		it*)
-			load_language_it
-			;;
 		de*)
 			load_language_de
+			;;
+		fr*)
+			load_language_fr
+			;;
+		it*)
+			load_language_it
 			;;
 	esac
 }

@@ -26,6 +26,7 @@ Type=Service
 X-KDE-Submenu=ReImage - Tools
 X-KDE-Submenu[it]=ReImage - Utilità
 X-KDE-Submenu[de]=ReImage - Utilitäten
+X-KDE-Submenu[fr]=ReImage - Outils
 
 ################################################################################
 
@@ -35,6 +36,7 @@ Icon=video-x-mp4
 Name=Create animated GIF
 Name[it]=Crea GIF animata
 Name[de]=Animierte GIF erstellen
+Name[fr]=Créer un GIF animé
 
 [Desktop Action append-right]
 Exec=reimage-kdialog montage %F
@@ -42,6 +44,7 @@ Icon=image-stack
 Name=Append to right
 Name[it]=Appendi immagine a destra
 Name[de]=Nach rechts anhängen
+Name[fr]=Ajouter à droite
 
 ################################################################################
 
@@ -51,6 +54,7 @@ Icon=color-management
 Name=GrayScale
 Name[it]=Scala di grigi
 Name[de]=Graustufen
+Name[fr]=Niveaux de gris
 
 [Desktop Action sepia]
 Exec=reimage-kdialog sepia 80% %F
@@ -58,6 +62,7 @@ Icon=color-management
 Name=Sepia
 Name[it]=Seppia
 Name[de]=Sepia
+Name[fr]=Sépia
 
 [Desktop Action transparent2color]
 Exec=reimage-kdialog transparent2color %F
@@ -65,6 +70,7 @@ Icon=color-management
 Name=Change transparent to color
 Name[it]=Cambia trasparenza a colore
 Name[de]=Transparenz in Farbe ändern
+Name[fr]=Changer la transparence en couleur
 
 ################################################################################
 
@@ -74,6 +80,7 @@ Icon=border-all
 Name=Add colored border
 Name[it]=Aggiungi bordo colorato
 Name[de]=Farbigen Rand hinzufügen
+Name[fr]=Ajouter une bordure colorée
 
 [Desktop Action border-transparent]
 Exec=reimage-kdialog border transparent %F
@@ -81,6 +88,7 @@ Icon=border-all
 Name=Add transparent border
 Name[it]=Aggiungi bordo trasparente
 Name[de]=Transparenten Rand hinzufügen
+Name[fr]=Ajouter una bordure transparente
 
 [Desktop Action shadow]
 Exec=reimage-kdialog shadow %F
@@ -88,3 +96,4 @@ Icon=image-filter
 Name=Drop shadow
 Name[it]=Aggiungi ombra
 Name[de]=Schlagschatten hinzufügen
+Name[fr]=Ajouter une ombre portée

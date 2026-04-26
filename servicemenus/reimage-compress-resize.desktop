@@ -26,6 +26,7 @@ Type=Service
 X-KDE-Submenu=ReImage - Compress and resize
 X-KDE-Submenu[it]=ReImage - Compressione e ridimensionamento
 X-KDE-Submenu[de]=ReImage - Komprimieren und Größe ändern
+X-KDE-Submenu[fr]=ReImage - Compresser et redimensionner
 
 ################################################################################
 
@@ -35,6 +36,7 @@ Icon=viewhtml
 Name=Make progressive
 Name[it]=Rendi progressiva
 Name[de]=Progressiv machen
+Name[fr]=Rendre progressif
 
 [Desktop Action optimize]
 Exec=reimage-kdialog optimize %F
@@ -42,6 +44,7 @@ Icon=viewhtml
 Name=Complete optimization for web
 Name[it]=Ottimizzazione completa per il web
 Name[de]=Vollständige Web-Optimierung
+Name[fr]=Optimisation web complète
 
 [Desktop Action compress-50]
 Exec=reimage-kdialog compress 50% %F
@@ -49,6 +52,7 @@ Icon=application-x-compressed-tar
 Name=Compress at 50%
 Name[it]=Comprimi al 50%
 Name[de]=Auf 50% komprimieren
+Name[fr]=Compresser à 50%
 
 [Desktop Action compress-70]
 Exec=reimage-kdialog compress 70% %F
@@ -56,6 +60,7 @@ Icon=application-x-compressed-tar
 Name=Compress at 70%
 Name[it]=Comprimi al 70%
 Name[de]=Auf 70% komprimieren
+Name[fr]=Compresser à 70%
 
 [Desktop Action compress-75]
 Exec=reimage-kdialog compress 75% %F
@@ -63,6 +68,7 @@ Icon=application-x-compressed-tar
 Name=Compress at 75%
 Name[it]=Comprimi al 75%
 Name[de]=Auf 75% komprimieren
+Name[fr]=Compresser à 75%
 
 [Desktop Action compress-80]
 Exec=reimage-kdialog compress 80% %F
@@ -70,6 +76,7 @@ Icon=application-x-compressed-tar
 Name=Compress at 80%
 Name[it]=Comprimi al 80%
 Name[de]=Auf 80% komprimieren
+Name[fr]=Compresser à 80%
 
 [Desktop Action compress-90]
 Exec=reimage-kdialog compress 90% %F
@@ -77,6 +84,7 @@ Icon=application-x-compressed-tar
 Name=Compress at 90%
 Name[it]=Comprimi al 90%
 Name[de]=Auf 90% komprimieren
+Name[fr]=Compresser à 90%
 
 [Desktop Action custom-compress]
 Exec=reimage-kdialog compress custom %F
@@ -84,6 +92,7 @@ Icon=application-x-compressed-tar
 Name=Custom quality
 Name[it]=Qualità personalizzata
 Name[de]=Benutzerdefinierte Qualität
+Name[fr]=Qualité personnalisée
 
 ################################################################################
 
@@ -93,6 +102,7 @@ Icon=image-resize-symbolic
 Name=Resize at 25%
 Name[it]=Ridimensiona al 25%
 Name[de]=Auf 25% skalieren
+Name[fr]=Redimensionner à 25%
 
 [Desktop Action resize-50]
 Exec=reimage-kdialog resize 50% %F
@@ -100,6 +110,7 @@ Icon=image-resize-symbolic
 Name=Resize at 50%
 Name[it]=Ridimensiona al 50%
 Name[de]=Auf 50% skalieren
+Name[fr]=Redimensionner à 50%
 
 [Desktop Action resize-75]
 Exec=reimage-kdialog resize 75% %F
@@ -107,6 +118,7 @@ Icon=image-resize-symbolic
 Name=Resize at 75%
 Name[it]=Ridimensiona al 75%
 Name[de]=Auf 75% skalieren
+Name[fr]=Redimensionner à 75%
 
 ################################################################################
 
@@ -116,6 +128,7 @@ Icon=image-resize-symbolic
 Name=Resize at 300x225 px
 Name[it]=Ridimensiona a 300x225 px
 Name[de]=Größe auf 300x225 px ändern
+Name[fr]=Redimensionner à 300x225 px
 
 [Desktop Action resize-600x450]
 Exec=reimage-kdialog resize 600x450 %F
@@ -123,6 +136,7 @@ Icon=image-resize-symbolic
 Name=Resize at 600x450 px
 Name[it]=Ridimensiona a 600x450 px
 Name[de]=Größe auf 600x450 px ändern
+Name[fr]=Redimensionner à 600x450 px
 
 [Desktop Action resize-640x480]
 Exec=reimage-kdialog resize 640x480 %F
@@ -130,6 +144,7 @@ Icon=image-resize-symbolic
 Name=Resize at 640x480 px
 Name[it]=Ridimensiona a 640x480 px
 Name[de]=Größe auf 640x480 px ändern
+Name[fr]=Redimensionner à 640x480 px
 
 [Desktop Action resize-800x600]
 Exec=reimage-kdialog resize 800x600 %F
@@ -137,6 +152,7 @@ Icon=image-resize-symbolic
 Name=Resize at 800x600 px
 Name[it]=Ridimensiona a 800x600 px
 Name[de]=Größe auf 800x600 px ändern
+Name[fr]=Redimensionner à 800x600 px
 
 [Desktop Action resize-1024x768]
 Exec=reimage-kdialog resize 1024x768 %F
@@ -144,6 +160,7 @@ Icon=image-resize-symbolic
 Name=Resize at 1024x768 px
 Name[it]=Ridimensiona a 1024x768 px
 Name[de]=Größe auf 1024x768 px ändern
+Name[fr]=Redimensionner à 1024x768 px
 
 [Desktop Action resize-1200x630]
 Exec=reimage-kdialog resize 1200x630 %F
@@ -151,6 +168,7 @@ Icon=image-resize-symbolic
 Name=Resize at 1200x630 px (Social OG)
 Name[it]=Ridimensiona a 1200x630 px (Social OG)
 Name[de]=Größe auf 1200x630 px ändern (Social OG)
+Name[fr]=Redimensionner à 1200x630 px (Social OG)
 
 [Desktop Action resize-1200x900]
 Exec=reimage-kdialog resize 1200x900 %F
@@ -158,6 +176,7 @@ Icon=image-resize-symbolic
 Name=Resize at 1200x900 px
 Name[it]=Ridimensiona a 1200x900 px
 Name[de]=Größe auf 1200x900 px ändern
+Name[fr]=Redimensionner à 1200x900 px
 
 [Desktop Action resize-1400x1050]
 Exec=reimage-kdialog resize 1400x1050 %F
@@ -165,6 +184,7 @@ Icon=image-resize-symbolic
 Name=Resize at 1400x1050 px
 Name[it]=Ridimensiona a 1400x1050 px
 Name[de]=Größe auf 1400x1050 px ändern
+Name[fr]=Redimensionner à 1400x1050 px
 
 [Desktop Action resize-1920x1080]
 Exec=reimage-kdialog resize 1920x1080 %F
@@ -172,6 +192,7 @@ Icon=image-resize-symbolic
 Name=Resize at 1920x1080 px
 Name[it]=Ridimensiona a 1920x1080 px
 Name[de]=Größe auf 1920x1080 px ändern
+Name[fr]=Redimensionner à 1920x1080 px
 
 ################################################################################
 
@@ -181,3 +202,4 @@ Icon=image-resize-symbolic
 Name=Custom resize
 Name[it]=Ridimensionamento personalizzato
 Name[de]=Benutzerdefinierte Größe
+Name[fr]=Redimensionnement personnalisé
