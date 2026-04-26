@@ -24,6 +24,126 @@
 new_line="
 "
 
+load_language_ar () {
+	msg_common_software_not_found_title="البرنامج غير موجود"
+	msg_common_mogrify_not_found_text="برنامج ImageMagick غير موجود! يرجى تثبيته."
+	msg_common_convert_not_found_text="برنامج ImageMagick غير موجود! يرجى تثبيته."
+	msg_common_montage_not_found_text="برنامج ImageMagick غير موجود! يرجى تثبيته."
+	msg_common_jhead_not_found_text="برنامج jhead غير موجود! يرجى تثبيته."
+	msg_common_webp_not_found_text="برنامج webp غير موجود! يرجى تثبيته."
+	msg_common_action_not_found_text="الإجراء المطلوب غير منفذ."
+	msg_common_overwrite_text="في حال كانت الصور المراد حفظها تحمل نفس اسم الصور التي تتم معالجتها،${new_line}هل تريد استبدالها؟"
+	msg_common_abort="تم إلغاء العملية من قبل المستخدم."
+	msg_common_file_not_found="الملف \"${name}\" غير موجود!"
+	msg_common_name_error="اسم الملف \"${name}\" لا يطابق تنسيق التاريخ المعترف به.${new_line}${new_line}يجب أن يكون الاسم من نوع: YYYY-MM-DD_HHMMSS.jpg"
+	msg_common_start="جاري التهيئة ... "
+	msg_common_progress_text="جاري معالجة الملف $processed من $quantity ($(basename "${input}"))"
+	msg_common_finish_ok="تم بنجاح."
+	msg_common_finish_error="حدث خطأ ما."
+	msg_common_transparent_unsupported_text="تنسيق JPEG لا يدعم الشفافية.${new_line}جاري التحويل إلى ملف PNG."
+
+	msg_agif_title="تحويل الملفات إلى GIF متحرك"
+	msg_agif_delay_input_text="أدخل مدة كل إطار بالأجزاء المئوية من الثانية:${new_line}(100 = ثانية واحدة)"
+	msg_agif_loop_input_text="هل تريد تكرار التشغيل؟"
+	msg_agif_cicles_number_input_text="أدخل عدد مرات تكرار الرسوم المتحركة:"
+	msg_agif_finish_title="تحويل الملفات إلى GIF متحرك"
+
+	msg_border_title="إضافة إطار"
+	msg_border_size_input_text="أدخل حجم الإطار بالنسبة المئوية أو بالبكسل.${new_line}${new_line}القيم الصالحة يمكن أن تكون: 10% أو 50"
+	msg_border_finish_title="إضافة إطار إلى \"${name}\""
+
+	msg_colorspace_title="تغيير مساحة اللون إلى \"${value}\""
+	msg_colorspace_finish_title="تغيير مساحة اللون لـ \"${name}\""
+
+	msg_compress_title="ضغط الصورة بجودة \"${value}\""
+	msg_compress_quality_input_text="أدخل الجودة:"
+	msg_compress_finish_title="ضغط \"${name}\""
+
+	msg_convert_title="تحويل الملف إلى تنسيق \"${value}\""
+	msg_convert_format_input_text="أدخل التنسيق الذي تريده.${new_line}يمكنك الحصول على قائمة كاملة من الطرفية عبر: mogrify -list format${new_line}أو مراجعة دليل ImageMagick."
+	msg_convert_finish_title="تحويل \"${name}\""
+
+	msg_favicons_title="توليد أيقونات المواقع"
+	msg_favicons_finish_title="توليد أيقونات المواقع من \"${name}\""
+
+	msg_montage_title="إرفاق صورة"
+	msg_montage_finish_title="إرفاق صورة بـ \"${name}\""
+
+	msg_optimize_title="تحسين للويب"
+	msg_optimize_finish_title="تحسين \"${name}\""
+
+	msg_overturn_title="قلب الملف إلى \"${value}\""
+	msg_overturn_finish_title="قلب \"${name}\""
+
+	msg_resize_title="تغيير حجم الصورة \"${value}\""
+	msg_resize_scale_input_text="أدخل عامل المقياس بالنسبة المئوية أو الحجم الأقصى المطلوب لكل اتجاه.${new_line}يمكنك اختيار النسبة المئوية أو حجم البكسل.${new_line}${new_line}القيم الصالحة يمكن أن تكون: 30% أو 1024x768"
+	msg_resize_finish_title="تغيير حجم \"${name}\""
+
+	msg_rotate_title="تدوير الملف بزاوية \"${value}\""
+	msg_rotate_angle_input_text="أدخل زاوية التدوير المطلوبة:"
+	msg_rotate_finish_title="تدوير \"${name}\""
+
+	msg_sepia_title="فلتر سيبيا"
+	msg_sepia_finish_title="فلتر سيبيا على \"${name}\""
+
+	msg_shadow_title="إضافة ظل"
+	msg_shadow_finish_title="إضافة ظل لـ \"${name}\""
+
+	msg_timestamp_title="إضافة طابع زمني"
+	msg_timestamp_finish_title="إضافة طابع زمني لـ \"${name}\""
+
+	msg_transparent2color_title="تغيير الشفافية إلى لون"
+	msg_transparent2color_finish_title="تغيير الشفافية إلى لون في \"${name}\""
+
+	msg_rfe_title="إعادة تسمية الملف من بيانات Exif"
+	msg_rfe_no_metadata="قد لا تحتوي الصورة على بيانات وصفية."
+	msg_rfe_finish_title="إعادة تسمية الملف \"${name}\""
+
+	msg_rff_title="إعادة تسمية الملف من تاريخ الملف"
+	msg_rff_finish_title="إعادة تسمية الملف \"${name}\""
+
+	msg_sffe_title="ضبط تاريخ الملف من بيانات Exif"
+	msg_sffe_no_metadata="قد لا تحتوي الصورة على بيانات وصفية."
+	msg_sffe_finish_title="ضبط التاريخ لـ \"${name}\""
+
+	msg_sffn_title="ضبط تاريخ الملف من اسم الملف"
+	msg_sffn_finish_title="ضبط التاريخ لـ \"${name}\""
+
+	msg_seff_title="ضبط تاريخ Exif من تاريخ الملف"
+	msg_seff_finish_title="ضبط التاريخ لـ \"${name}\""
+
+	msg_sefn_title="ضبط تاريخ Exif من اسم الملف"
+	msg_sefn_finish_title="ضبط التاريخ لـ \"${name}\""
+
+	msg_ac_title="إضافة تعليق"
+	msg_ac_comment_input_text="اكتب التعليق لإضافته:"
+	msg_ac_finish_title="إضافة تعليق في \"${name}\""
+
+	msg_ve_title="عرض البيانات الوصفية"
+	msg_ve_finish_title="عرض البيانات الوصفية لـ \"${name}\""
+
+	msg_ee_title="استخراج البيانات الوصفية"
+	msg_ee_finish_title="استخراج البيانات الوصفية من \"${name}\""
+
+	msg_dc_title="حذف التعليق"
+	msg_dc_finish_title="حذف التعليق من \"${name}\""
+
+	msg_de_title="مسح قسم Exif"
+	msg_de_finish_title="مسح قسم Exif من \"${name}\""
+
+	msg_di_title="حذف قسم IPTC"
+	msg_di_finish_title="حذف قسم IPTC من \"${name}\""
+
+	msg_dx_title="حذف قسم XMP"
+	msg_dx_finish_title="حذف قسم XMP من \"${name}\""
+
+	msg_purejpg_title="حذف جميع البيانات غير الضرورية"
+	msg_purejpg_finish_title="حذف جميع البيانات غير الضرورية من \"${name}\""
+
+	msg_base64_title="تحويل إلى Base64"
+	msg_base64_finish_title="تحويل \"${name}\" إلى Base64"
+}
+
 load_language_de () {
 	msg_common_software_not_found_title="Software nicht gefunden"
 	msg_common_mogrify_not_found_text="Software ImageMagick wurde nicht gefunden! Bitte installieren Sie es."
@@ -1357,6 +1477,9 @@ load_language () {
 	[ -z "${lang}" ] && lang=${LANG%%.*}
 
 	case "${lang}" in
+		ar*)
+			load_language_ar
+			;;
 		de*)
 			load_language_de
 			;;
