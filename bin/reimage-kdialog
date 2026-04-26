@@ -140,6 +140,9 @@ load_language_en_US () {
 
 	msg_purejpg_title="Strip all unnecessary data"
 	msg_purejpg_finish_title="Strip all unnecessary data from \"${name}\""
+
+	msg_base64_title="Convert to Base64"
+	msg_base64_finish_title="Convert to Base64 \"${name}\""
 }
 
 load_language_it () {
@@ -258,6 +261,9 @@ load_language_it () {
 
 	msg_purejpg_title="Elimina medatati non necessari"
 	msg_purejpg_finish_title="Elimina medatati non necessari da \"${name}\""
+
+	msg_base64_title="Converti in Base64"
+	msg_base64_finish_title="Conversione in Base64 di \"${name}\""
 }
 
 load_language () {
@@ -290,6 +296,7 @@ help () {
 	echo "resize		resize image (value in percent  or XxY)"
 	echo "rotate		rotate image (value is angle of rotation)"
 	echo "sepia		sepia filter to image (value is percent of used filter)"
+	echo "base64		convert file to base64 string"
 	echo
 	echo "Actions with metadata:"
 	echo "rfe		rename file with Exif datetime"
@@ -795,6 +802,11 @@ run_sepia () {
 	return $?
 }
 
+run_base64 () {
+	msg=$(base64 -w0 "${input}" > "${input}.base64" 2>&1)
+	return $?
+}
+
 run_shadow () {
 	jfif=$(file "${input}" | grep JFIF)
 	[ -n "${jfif}" ] && "${kdialog_bin}" --icon configure --title "${!msg_finish_title}" --sorry "${msg_common_transparent_unsupported_text}" && return 0
@@ -1269,6 +1281,11 @@ set_dx () {
 
 ## Strip all unnecessary data
 set_purejpg () {
+	manage_input_separately "${@}"
+}
+
+## Base64 conversion
+set_base64 () {
 	manage_input_separately "${@}"
 }
 

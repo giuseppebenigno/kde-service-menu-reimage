@@ -17,7 +17,7 @@
 #
 
 [Desktop Entry]
-Actions=gif;jpeg;png;tiff;webp;_SEPARATOR_;pdf;pdfa;_SEPARATOR_;agif;favicons;base64;convert_custom;formats;_SEPARATOR_;rotate_90;rotate_180;rotate_270;rotate_custom;auto;_SEPARATOR_;flip;flop;_SEPARATOR_;
+Actions=gif;jpeg;png;tiff;webp;pdf;pdfa;agif;favicons;base64;convert-custom;formats;rotate-90;rotate-180;rotate-270;rotate-custom;auto;flip;flop;
 MimeType=image/*
 Name=ReImage convert and rotate service menu
 ServiceTypes=KonqPopupMenu/Plugin,image/*
@@ -87,12 +87,12 @@ Name=Generate favicons
 Name[it]=Genera favicons
 
 [Desktop Action base64]
-Exec=for i in %F; do cat "$i" | base64 -w0 > "$i".base64; done
+Exec=reimage-kdialog base64 %F
 Icon=text-plain
 Name=Convert to Base64
 Name[it]=Converti in Base64
 
-[Desktop Action convert_custom]
+[Desktop Action convert-custom]
 Exec=reimage-kdialog convert custom %F
 Icon=image
 Name=Convert to format ...
@@ -106,25 +106,25 @@ Name[it]=Elenco formati
 
 ################################################################################
 
-[Desktop Action rotate_90]
+[Desktop Action rotate-90]
 Exec=reimage-kdialog rotate 90 %F
 Icon=image-rotate-right-symbolic
 Name=Rotate 90°
 Name[it]=Ruota di 90°
 
-[Desktop Action rotate_180]
+[Desktop Action rotate-180]
 Exec=reimage-kdialog rotate 180 %F
 Icon=image-rotate-right-symbolic
 Name=Rotate 180°
 Name[it]=Ruota di 180°
 
-[Desktop Action rotate_270]
+[Desktop Action rotate-270]
 Exec=reimage-kdialog rotate 270 %F
 Icon=image-rotate-left-symbolic
 Name=Rotate (-90°)
 Name[it]=Ruota di -90°
 
-[Desktop Action rotate_custom]
+[Desktop Action rotate-custom]
 Exec=reimage-kdialog rotate custom %F
 Icon=view-refresh
 Name=Rotate custom

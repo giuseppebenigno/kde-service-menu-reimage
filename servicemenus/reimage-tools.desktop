@@ -17,7 +17,7 @@
 #
 
 [Desktop Entry]
-Actions=agif;append_right;_SEPARATOR_;gray;sepia;transparent2color;_SEPARATOR_;border;border_transparent;shadow;_SEPARATOR_;
+Actions=agif;append-right;gray;sepia;transparent2color;border;border-transparent;shadow;
 MimeType=image/*
 Name=ReImage tools service menu
 ServiceTypes=KonqPopupMenu/Plugin,image/*
@@ -34,7 +34,7 @@ Icon=video-x-mp4
 Name=Create animated GIF
 Name[it]=Crea GIF animata
 
-[Desktop Action append_right]
+[Desktop Action append-right]
 Exec=reimage-kdialog montage %F
 Icon=image-flip-horizontal-symbolic
 Name=Append to right
@@ -68,7 +68,7 @@ Icon=bordertool
 Name=Add colored border
 Name[it]=Aggiungi bordo colorato
 
-[Desktop Action border_transparent]
+[Desktop Action border-transparent]
 Exec=reimage-kdialog border transparent %F
 Icon=box
 Name=Add transparent border
