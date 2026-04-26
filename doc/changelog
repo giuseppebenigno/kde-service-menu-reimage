@@ -1,3 +1,55 @@
+kde-service-menu-reimage (2.5) unstable; urgency=medium
+
+  * Added conversion to webp format
+  * Added convert to progressive
+  * Added progressive to Web Optimization
+
+ -- Giuseppe Benigno <giuseppe.benigno@gmail.com>  Thu, 28 Mar 2019 18:52:57 +0100
+
+kde-service-menu-reimage (2.4) unstable; urgency=medium
+
+  * Added menu voice "Generate favicons" for browser/android/apple/ms
+
+ -- Giuseppe Benigno <giuseppe.benigno@gmail.com>  Thu, 03 Jan 2019 18:52:57 +0100
+
+kde-service-menu-reimage (2.3) unstable; urgency=medium
+
+  * Added menu top item "Tools"
+  * Added menu voice "Append to right" with autoresize
+  * Fixed error when select autorotate from exif
+  * Added warning when it does not find metadata when require it
+  * Merge scripts in one
+
+ -- Giuseppe Benigno <giuseppe.benigno@gmail.com>  Sun, 13 May 2018 12:00:01 +0200
+
+kde-service-menu-reimage (2.2) unstable; urgency=medium
+
+  * Add some italian translation
+  * Set overwrite dialog with button default to No
+  * Replaced normal error dialog with error dialog with details
+  * Added default color #FFFFFF when ask for it
+  * Fixed overturn replacing image
+  * Ask for overwrite only if output has same extension of input
+  * Default border size is 5%
+  * Changed output names from action_filename to basename_action.extension
+  * Section metadata: Add comment
+  * Section metadata: View metadata
+  * Section metadata: Extract metadata to file
+  * Section metadata: Add Timestamp from Exif
+  * Section convert: Replace transparent with color
+  * Section convert: Add colored border
+  * Section convert: Add transparent border
+  * Section convert: Drop shadow
+
+ -- Giuseppe Benigno <giuseppe.benigno@gmail.com>  Sun, 06 May 2018 20:00:01 +0200
+
+kde-service-menu-reimage (2.1) unstable; urgency=medium
+
+  * fixed a little bug for which the parameters were not passed
+    to some internal features: compress, convert, resize, rotate
+
+ -- Giuseppe Benigno <giuseppe.benigno@gmail.com>  Thu, 03 May 2018 11:11:11 +0200
+
 kde-service-menu-reimage (2.0) unstable; urgency=medium
 
   * Advanced optimization for web

@@ -1,7 +1,7 @@
-#! /bin/sh
+#! /bin/bash
 #
-# 	Part of kde-service-menu-reimage Version 1.1
-# 	Copyright (C) 2018-2018 Giuseppe Benigno <giuseppe.benigno(at)gmail.com>
+# 	Part of kde-service-menu-reimage Version 2.5
+# 	Copyright (C) 2018-2019 Giuseppe Benigno <giuseppe.benigno(at)gmail.com>
 #
 # 	This program is free software: you can redistribute it and/or modify
 # 	it under the terms of the GNU General Public License as published by
@@ -17,22 +17,32 @@
 # 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-bin_dir="$(kf5-config --path exe | sed "s/.*://")"
-echo "removing ${bin_dir}jhead-kdialog"
-sudo rm "${bin_dir}/jhead-kdialog"
-echo "removing ${bin_dir}mogrify-kdialog"
-sudo rm "${bin_dir}/mogrify-kdialog"
+if [[ $EUID -eq 0 ]]; then
+    bin_dir="$(kf5-config --path exe | sed "s/.*://")"
+    desktop_dir="$(kf5-config --path services | sed "s/.*://")ServiceMenus/"
+    doc_dir="$(kf5-config --prefix)/share/doc/kde-service-menu-reimage/"
+    echo "Removing kde-service-menu-reimage system wide"
+else
+    bin_dir="$HOME/bin"
+    desktop_dir="$(kf5-config --path services | sed "s/:.*//")"
+    doc_dir=$HOME"/share/doc/kde-service-menu-reimage/"
+    echo "Removing kde-service-menu-reimage locally"
+fi
 
-desktop_dir="$(kf5-config --path services | sed "s/.*://")ServiceMenus/"
+echo "removing ${bin_dir}reimage-kdialog"
+rm "${bin_dir}/reimage-kdialog"
+
 echo "removing ${desktop_dir}reimage-compress-resize.desktop"
-sudo rm "${desktop_dir}/reimage-compress-resize.desktop"
+rm "${desktop_dir}reimage-compress-resize.desktop"
 echo "removing ${desktop_dir}reimage-convert-rotate.desktop"
-sudo rm "${desktop_dir}/reimage-convert-rotate.desktop"
+rm "${desktop_dir}reimage-convert-rotate.desktop"
 echo "removing ${desktop_dir}reimage-metadata.desktop"
-sudo rm "${desktop_dir}/reimage-metadata.desktop"
+rm "${desktop_dir}reimage-metadata.desktop"
+echo "removing ${desktop_dir}reimage-tools.desktop"
+rm "${desktop_dir}reimage-tools.desktop"
 
-doc_dir="$(kf5-config --prefix)/share/doc/kde-service-menu-reimage/"
-echo "removing $(kf5-config --prefix)/share/doc/kde-service-menu-reimage/"
-sudo rm -rf "${doc_dir}"
+echo "removing ${doc_dir}"
+rm -rf "${doc_dir}"
 
+echo
 echo "kde-service-menu-reimage has been removed. Good bye."
