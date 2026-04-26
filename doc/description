@@ -1,0 +1,8 @@
+Description: Rename JPG files using Dolphin/Konqueror
+ kde-service-menu-reimage is a package that extends the functionalities of Dolphin
+ or Konqueror adding many additionally sensible menu, reachables with right
+ click on the files. It's similar to gnome nautilus actions.
+ These actions are related to pdf files.
+ .
+ You can rename jpg and tiff files with data content in Exif metadata.
+ For example: 001.jpg -> 2018-04-27_133741.jpg

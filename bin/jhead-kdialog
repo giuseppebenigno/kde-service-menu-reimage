@@ -1,0 +1,119 @@
+#! /bin/sh
+#
+# 	Part of kde-service-menu-reimage Version 1.0
+# 	Copyright (C) 2018-2018 Giuseppe Benigno <giuseppe.benigno(at)gmail.com>
+#
+# 	This program is free software: you can redistribute it and/or modify
+# 	it under the terms of the GNU General Public License as published by
+# 	the Free Software Foundation, either version 3 of the License, or
+# 	(at your option) any later version.
+#
+# 	This program is distributed in the hope that it will be useful,
+# 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+# 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# 	GNU General Public License for more details.
+#
+# 	You should have received a copy of the GNU General Public License
+# 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+if [ ${#} -lt 2 ] || [ "${1}" = "-h" ] || [ "${1}" = "--help" ]; then
+	echo
+	echo "USE:\t\t${0##*/} action files"
+	echo
+	echo "Actions"
+	echo "rename:\trename file with Exif data"
+	echo
+	echo "files:\t\tfile1 file2 ..."
+	echo
+	echo "example:\t${0##*/} rename /home/user/file1.jpg /home/user/file2.jpg"
+	echo
+	exit 0
+fi
+
+#### languages strings messages #################
+# Syntax for strings name is: msg_[$action]_$window_[$section]
+# For languages as sr@Latn use srLatn
+
+load_language_en () {
+	msg_alert_software_not_found_title="Software not found"
+	msg_alert_jhead_not_found_text="Software jhead not found! Please, install it."
+	msg_alert_action_not_found_title="Action not implemented"
+	msg_alert_action_not_found_text="The requested action is not implemented."
+	msg_rename_title="Rename file \"${name}\""
+	msg_rename_ok="Done."
+	msg_rename_error="An error has occurred."
+}
+
+load_language_it () {
+	msg_alert_software_not_found_title="Software non trovato"
+	msg_alert_jhead_not_found_text="Il software jhead non è stato trovato! Per favore, installalo."
+	msg_alert_action_not_found_title="Azione non implementata"
+	msg_alert_action_not_found_text="L'azione richiesta non è implementata."
+	msg_rename_title="Rinomina file \"${name}\""
+	msg_rename_ok="Completato."
+	msg_rename_error="Si sono verificati degli errori."
+}
+
+load_language () {
+	## Load localized strings AFTER english strings
+	## - if localized strings not found use english for default
+	## - if localized strings are incomplete use english only fot missing strings :-)
+	load_language_en && [ "${lang}" != "en" ] && load_language_${lang}
+}
+
+lang=${LANGUAGE%%:*}
+type load_language_${lang} > /dev/null || lang='en'
+load_language
+
+################################################
+
+kdialog_bin=$(which kdialog)
+[ -z "${kdialog_bin}" ] && echo "kdialog not found!" && exit 1
+
+jhead_bin=$(which jhead)
+[ -z "${jhead_bin}" ] && \
+	"${kdialog_bin}" --title "${msg_alert_software_not_found_title}" --icon configure --error "${msg_alert_jhead_not_found_text}" && exit 2
+
+################################################
+
+jhead_rename () {
+	quantity=$#
+	dbus_ref=$(kdialog --title "${msg_rename_title}" --progressbar "Rename file - Initialising ... " $quantity)
+	qdbus $dbus_ref showCancelButton true
+	processed=0
+
+	for input in "$@"; do
+		## Check if cancel button has been pushed
+		[ "$(qdbus $dbus_ref wasCancelled)" = "true" ] && qdbus $dbus_ref close && exit 1
+
+		dir=$(dirname -- "${input}")
+		name="${input##*/}"
+		load_language
+
+		processed=$(($processed + 1))
+		qdbus $dbus_ref setLabelText "Renaming file $processed of $quantity ($(basename "${input}"))"
+
+		autorotate="-autorot"
+
+		jhead $autorotate -q -nf%Y-%m-%d_%H%M%S -ft "${input}" && \
+		"${kdialog_bin}" --title "${msg_rename_title}" --passivepopup "${msg_rename_ok}" 5 || \
+		{ "${kdialog_bin}" --title "${msg_rename_title}" --icon configure --error "${msg_rename_error}" && exit 2; }
+
+		qdbus $dbus_ref org.freedesktop.DBus.Properties.Set org.kde.kdialog.ProgressDialog value $processed
+	done
+
+	qdbus $dbus_ref close
+}
+
+#### main
+
+action="${1}"
+shift
+
+type jhead_${action} > /dev/null || \
+	{ "${kdialog_bin}" --title "${msg_alert_action_not_found_title}" --icon configure --error "${msg_alert_action_not_found_text}" && exit 2; }
+
+jhead_"${action}" "${@}"
+
+exit 0
