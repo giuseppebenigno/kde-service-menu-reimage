@@ -28,6 +28,7 @@ X-KDE-Submenu[it]=ReImage - Utilità
 X-KDE-Submenu[de]=ReImage - Utilitäten
 X-KDE-Submenu[fr]=ReImage - Outils
 X-KDE-Submenu[es]=ReImage - Herramientas
+X-KDE-Submenu[ru]=ReImage - Инструменты
 
 ################################################################################
 
@@ -39,6 +40,7 @@ Name[it]=Crea GIF animata
 Name[de]=Animierte GIF erstellen
 Name[fr]=Créer un GIF animé
 Name[es]=Crear GIF animado
+Name[ru]=Создать анимированный GIF
 
 [Desktop Action append-right]
 Exec=reimage-kdialog montage %F
@@ -48,6 +50,7 @@ Name[it]=Appendi immagine a destra
 Name[de]=Nach rechts anhängen
 Name[fr]=Ajouter à droite
 Name[es]=Añadir a la derecha
+Name[ru]=Прикрепить справа
 
 ################################################################################
 
@@ -59,6 +62,7 @@ Name[it]=Scala di grigi
 Name[de]=Graustufen
 Name[fr]=Niveaux de gris
 Name[es]=Escala de grises
+Name[ru]=Оттенки серого
 
 [Desktop Action sepia]
 Exec=reimage-kdialog sepia 80% %F
@@ -68,6 +72,7 @@ Name[it]=Seppia
 Name[de]=Sepia
 Name[fr]=Sépia
 Name[es]=Sepia
+Name[ru]=Сепия
 
 [Desktop Action transparent2color]
 Exec=reimage-kdialog transparent2color %F
@@ -77,6 +82,7 @@ Name[it]=Cambia trasparenza a colore
 Name[de]=Transparenz in Farbe ändern
 Name[fr]=Changer la transparence en couleur
 Name[es]=Cambiar transparencia a color
+Name[ru]=Заменить прозрачность цветом
 
 ################################################################################
 
@@ -88,6 +94,7 @@ Name[it]=Aggiungi bordo colorato
 Name[de]=Farbigen Rand hinzufügen
 Name[fr]=Ajouter une bordure colorée
 Name[es]=Añadir borde coloreado
+Name[ru]=Добавить цветную рамку
 
 [Desktop Action border-transparent]
 Exec=reimage-kdialog border transparent %F
@@ -97,6 +104,7 @@ Name[it]=Aggiungi bordo trasparente
 Name[de]=Transparenten Rand hinzufügen
 Name[fr]=Ajouter una bordure transparente
 Name[es]=Añadir borde transparente
+Name[ru]=Добавить прозрачную рамку
 
 [Desktop Action shadow]
 Exec=reimage-kdialog shadow %F
@@ -106,3 +114,4 @@ Name[it]=Aggiungi ombra
 Name[de]=Schlagschatten hinzufügen
 Name[fr]=Ajouter une ombre portée
 Name[es]=Añadir sombra paralela
+Name[ru]=Добавить тень

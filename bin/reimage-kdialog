@@ -626,6 +626,126 @@ load_language_it () {
 	msg_base64_finish_title="Conversione in Base64 di \"${name}\""
 }
 
+load_language_ru () {
+	msg_common_software_not_found_title="Программа не найдена"
+	msg_common_mogrify_not_found_text="Программа ImageMagick не найдена! Пожалуйста, установите её."
+	msg_common_convert_not_found_text="Программа ImageMagick не найдена! Пожалуйста, установите её."
+	msg_common_montage_not_found_text="Программа ImageMagick не найдена! Пожалуйста, установите её."
+	msg_common_jhead_not_found_text="Программа jhead не найдена! Пожалуйста, установите её."
+	msg_common_webp_not_found_text="Программа webp не найдена! Пожалуйста, установите её."
+	msg_common_action_not_found_text="Запрошенное действие не реализовано."
+	msg_common_overwrite_text="Если сохраняемые изображения имеют те же имена, что и обрабатываемые,${new_line}хотите ли вы их перезаписать?"
+	msg_common_abort="Операция прервана пользователем."
+	msg_common_file_not_found="Файл \"${name}\" не найден!"
+	msg_common_name_error="Имя файла \"${name}\" не соответствует распознанному формату даты.${new_line}${new_line}Имя должно быть типа: ГГГГ-ММ-ДД_ЧЧММСС.jpg"
+	msg_common_start="Инициализация ... "
+	msg_common_progress_text="Обработка файла $processed из $quantity ($(basename "${input}"))"
+	msg_common_finish_ok="Готово."
+	msg_common_finish_error="Произошла ошибка."
+	msg_common_transparent_unsupported_text="Формат JPEG не поддерживает прозрачность.${new_line}Конвертация в файл PNG."
+
+	msg_agif_title="Конвертировать файлы в анимированный GIF"
+	msg_agif_delay_input_text="Введите длительность кадра в сотых долях секунды:${new_line}(100 = 1 секунда)"
+	msg_agif_loop_input_text="Хотите зациклить воспроизведение?"
+	msg_agif_cicles_number_input_text="Введите количество повторений анимации:"
+	msg_agif_finish_title="Конвертировать файлы в анимированный GIF"
+
+	msg_border_title="Добавить рамку"
+	msg_border_size_input_text="Введите размер рамки в процентах или пикселях.${new_line}${new_line}Допустимые значения: 10% или 50"
+	msg_border_finish_title="Добавление рамки к \"${name}\""
+
+	msg_colorspace_title="Изменение цветового пространства на \"${value}\""
+	msg_colorspace_finish_title="Изменение цветового пространства \"${name}\""
+
+	msg_compress_title="Сжатие изображения с качеством \"${value}\""
+	msg_compress_quality_input_text="Введите качество:"
+	msg_compress_finish_title="Сжатие \"${name}\""
+
+	msg_convert_title="Конвертировать файл в формат \"${value}\""
+	msg_convert_format_input_text="Введите нужный формат.${new_line}Полный список можно получить в консоли командой: mogrify -list format${new_line}или в руководстве ImageMagick."
+	msg_convert_finish_title="Конвертация \"${name}\""
+
+	msg_favicons_title="Создание фавиконок"
+	msg_favicons_finish_title="Создание фавиконок из \"${name}\""
+
+	msg_montage_title="Прикрепить изображение"
+	msg_montage_finish_title="Прикрепление изображения к \"${name}\""
+
+	msg_optimize_title="Оптимизация для веб"
+	msg_optimize_finish_title="Оптимизация \"${name}\""
+
+	msg_overturn_title="Отразить файл \"${value}\""
+	msg_overturn_finish_title="Отражение \"${name}\""
+
+	msg_resize_title="Изменение размера изображения \"${value}\""
+	msg_resize_scale_input_text="Введите коэффициент масштабирования в процентах или максимальный размер.${new_line}Можно выбрать проценты или размер в пикселях.${new_line}${new_line}Допустимые значения: 30% или 1024x768"
+	msg_resize_finish_title="Изменение размера \"${name}\""
+
+	msg_rotate_title="Повернуть файл на угол \"${value}\""
+	msg_rotate_angle_input_text="Введите нужный угол поворота:"
+	msg_rotate_finish_title="Поворот \"${name}\""
+
+	msg_sepia_title="Фильтр сепия"
+	msg_sepia_finish_title="Фильтр сепия для \"${name}\""
+
+	msg_shadow_title="Тень"
+	msg_shadow_finish_title="Добавление тени к \"${name}\""
+
+	msg_timestamp_title="Добавить отметку времени"
+	msg_timestamp_finish_title="Добавление отметки времени к \"${name}\""
+
+	msg_transparent2color_title="Заменить прозрачность цветом"
+	msg_transparent2color_finish_title="Замена прозрачности цветом в \"${name}\""
+
+	msg_rfe_title="Переименовать файл на основе метаданных Exif"
+	msg_rfe_no_metadata="Возможно, изображение не содержит метаданных."
+	msg_rfe_finish_title="Переименование файла \"${name}\""
+
+	msg_rff_title="Переименовать файл на основе даты файла"
+	msg_rff_finish_title="Переименование файла \"${name}\""
+
+	msg_sffe_title="Установить дату файла из метаданных Exif"
+	msg_sffe_no_metadata="Возможно, изображение не содержит метаданных."
+	msg_sffe_finish_title="Установка даты для \"${name}\""
+
+	msg_sffn_title="Установить дату файла из имени файла"
+	msg_sffn_finish_title="Установка даты для \"${name}\""
+
+	msg_seff_title="Установить дату Exif из даты файла"
+	msg_seff_finish_title="Установка даты для \"${name}\""
+
+	msg_sefn_title="Установить дату Exif из имени файла"
+	msg_sefn_finish_title="Установка даты для \"${name}\""
+
+	msg_ac_title="Добавить комментарий"
+	msg_ac_comment_input_text="Введите комментарий для добавления:"
+	msg_ac_finish_title="Добавление комментария в \"${name}\""
+
+	msg_ve_title="Просмотр метаданных"
+	msg_ve_finish_title="Просмотр метаданных \"${name}\""
+
+	msg_ee_title="Извлечь метаданные"
+	msg_ee_finish_title="Извлечение метаданных из \"${name}\""
+
+	msg_dc_title="Удалить комментарий"
+	msg_dc_finish_title="Удаление комментария из \"${name}\""
+
+	msg_de_title="Очистить секцию Exif"
+	msg_de_finish_title="Очистка секции Exif из \"${name}\""
+
+	msg_di_title="Удалить секцию IPTC"
+	msg_di_finish_title="Удаление секции IPTC из \"${name}\""
+
+	msg_dx_title="Удалить секцию XMP"
+	msg_dx_finish_title="Удаление секции XMP из \"${name}\""
+
+	msg_purejpg_title="Удалить все ненужные данные"
+	msg_purejpg_finish_title="Удаление всех ненужных данных из \"${name}\""
+
+	msg_base64_title="Конвертировать в Base64"
+	msg_base64_finish_title="Конвертация \"${name}\" в Base64"
+}
+
 load_language () {
 	## Load localized strings AFTER english strings
 	## - if localized strings not found use english for default
@@ -648,6 +768,9 @@ load_language () {
 			;;
 		it*)
 			load_language_it
+			;;
+		ru*)
+			load_language_ru
 			;;
 	esac
 }
