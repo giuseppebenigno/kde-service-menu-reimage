@@ -14,14 +14,51 @@ else
     exit 1
 fi
 
-# Check for dependencies
+# Required runtime dependencies and the commands they provide:
+#   imagemagick -> magick / convert / mogrify / montage  (image processing)
+#   jhead       -> jhead                                  (EXIF metadata)
+#   webp        -> webpinfo                               (WebP support)
+#   kdialog     -> kdialog                                (GUI dialogs)
+#   qtX-tools   -> qdbus / qdbus6                         (Qt D-Bus client)
+check_dep () {
+    local cmd="$1" pkg="$2"
+    if ! command -v "$cmd" >/dev/null 2>&1; then
+        missing_cmds+=("$cmd")
+        missing_pkgs+=("$pkg")
+    fi
+}
+
 echo "Checking dependencies..."
+missing_cmds=()
+missing_pkgs=()
+
 if ! command -v magick >/dev/null 2>&1 && ! command -v convert >/dev/null 2>&1; then
-    echo "⚠️  WARNING: ImageMagick (magick or convert) not found! Most actions will not work."
+    missing_cmds+=("magick/convert")
+    missing_pkgs+=("imagemagick")
+fi
+check_dep jhead    jhead
+check_dep webpinfo webp
+check_dep kdialog  kdialog
+if ! command -v qdbus6 >/dev/null 2>&1 && ! command -v qdbus >/dev/null 2>&1; then
+    missing_cmds+=("qdbus/qdbus6")
+    missing_pkgs+=("qt6-tools-dev-tools")
 fi
 
-if ! command -v jhead >/dev/null 2>&1; then
-    echo "⚠️  WARNING: jhead not found! Metadata actions will not work."
+if [ ${#missing_cmds[@]} -gt 0 ]; then
+    echo "⚠️  Missing dependencies: ${missing_cmds[*]}"
+    if command -v apt-get >/dev/null 2>&1; then
+        echo "On Debian/Ubuntu, install with:"
+        echo "  sudo apt install ${missing_pkgs[*]}"
+    elif command -v dnf >/dev/null 2>&1; then
+        echo "On Fedora/RHEL, install with:"
+        echo "  sudo dnf install ${missing_pkgs[*]}"
+    elif command -v pacman >/dev/null 2>&1; then
+        echo "On Arch, install with:"
+        echo "  sudo pacman -S ${missing_pkgs[*]}"
+    else
+        echo "Install the equivalent packages for your distribution."
+    fi
+    echo
 fi
 
 # Determine if running as root
