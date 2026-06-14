@@ -20,7 +20,6 @@
 Actions=rfe;rff;sffe;sffn;seff;sefn;add-comment;view-metadata;extract-metadata;del-comment;del-exif;del-iptc;del-xmp;del-all;tfe;
 MimeType=image/jpeg;image/tiff;
 Name=ReImage metadata service menu
-X-KDE-ServiceTypes=KonqPopupMenu/Plugin
 TryExec=reimage-kdialog
 Type=Application
 X-KDE-Submenu=ReImage - Metadata

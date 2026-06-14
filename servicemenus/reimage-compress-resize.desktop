@@ -20,7 +20,6 @@
 Actions=progressive;optimize;compress-50;compress-70;compress-75;compress-80;compress-90;custom-compress;resize-25;resize-50;resize-75;resize-300x225;resize-600x450;resize-640x480;resize-800x600;resize-1024x768;resize-1200x630;resize-1200x900;resize-1400x1050;resize-1920x1080;custom-resize;
 MimeType=image/*
 Name=ReImage compress and resize service menu
-X-KDE-ServiceTypes=KonqPopupMenu/Plugin
 TryExec=reimage-kdialog
 Type=Application
 X-KDE-Submenu=ReImage - Compress and resize
