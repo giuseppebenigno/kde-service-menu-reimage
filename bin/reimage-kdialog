@@ -2780,18 +2780,32 @@ qdbus_bin=$(command -v qdbus6)
 [ -z "${qdbus_bin}" ] && \
 	"${kdialog_bin}" --icon configure --title "${msg_common_software_not_found_title}" --error "Software qdbus or qdbus6 not found! Please, install it." && exit 1
 
+# The script uses IM6 calling conventions (operator before input file).
+# IM7's unified 'magick' binary requires input-first order, so prefer the
+# legacy convert/mogrify/montage binaries when available (Debian/Ubuntu
+# ship them as IM7-compat wrappers alongside 'magick'). Fall back to
+# 'magick <subcommand>' only when the legacy names are missing.
+mogrify_path=$(command -v mogrify)
+convert_path=$(command -v convert)
+montage_path=$(command -v montage)
 magick_bin=$(command -v magick)
-if [ -n "${magick_bin}" ]; then
+
+if [ -n "${mogrify_path}" ]; then
+	mogrify_bin=("${mogrify_path}")
+elif [ -n "${magick_bin}" ]; then
 	mogrify_bin=("${magick_bin}" mogrify)
-	convert_bin=("${magick_bin}")
+fi
+
+if [ -n "${convert_path}" ]; then
+	convert_bin=("${convert_path}")
+elif [ -n "${magick_bin}" ]; then
+	convert_bin=("${magick_bin}" convert)
+fi
+
+if [ -n "${montage_path}" ]; then
+	montage_bin=("${montage_path}")
+elif [ -n "${magick_bin}" ]; then
 	montage_bin=("${magick_bin}" montage)
-else
-	mogrify_path=$(command -v mogrify)
-	convert_path=$(command -v convert)
-	montage_path=$(command -v montage)
-	[ -n "${mogrify_path}" ] && mogrify_bin=("${mogrify_path}")
-	[ -n "${convert_path}" ] && convert_bin=("${convert_path}")
-	[ -n "${montage_path}" ] && montage_bin=("${montage_path}")
 fi
 
 [ -z "${mogrify_bin[0]}" ] && \
