@@ -2,7 +2,7 @@
 
 A powerful and comprehensive KDE Plasma 6 Service Menu for advanced image manipulation and metadata management directly from Dolphin or Konqueror.
 
-Version: 2.6.2
+Version: 2.6.3
 License: GPL-3
 
 ## 🌟 Features
