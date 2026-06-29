@@ -1,3 +1,11 @@
+kde-service-menu-reimage (2.6.2) unstable; urgency=medium
+
+  * Merged improvements from community fork (src.ranjithsiji)
+  * Enhanced install.sh with real-time package manager suggestions (apt, dnf, pacman)
+  * Modernized .desktop files for better Plasma 6 compatibility (removed _SEPARATOR_ and ServiceTypes, added root Exec)
+
+ -- Giuseppe Benigno <giuseppe.benigno@gmail.com>  Mon, 29 Jun 2026 16:55:00 +0200
+
 kde-service-menu-reimage (2.6.1) unstable; urgency=medium
 
   * Clean up and synchronize documentation
